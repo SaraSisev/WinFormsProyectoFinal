@@ -1,0 +1,153 @@
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\WinFormsProyectoFinal.exe
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\WinFormsProyectoFinal.deps.json
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\WinFormsProyectoFinal.runtimeconfig.json
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\WinFormsProyectoFinal.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\WinFormsProyectoFinal.pdb
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Form1.resources
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Form2.resources
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Properties.Resources.resources
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.csproj.GenerateResource.cache
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.AssemblyInfoInputs.cache
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.AssemblyInfo.cs
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.csproj.CoreCompileInputs.cache
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\refint\WinFormsProyectoFinal.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.pdb
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.genruntimeconfig.cache
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\ref\WinFormsProyectoFinal.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Security.Permissions.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Text.Encoding.CodePages.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Windows.Extensions.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\ZstdSharp.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.csproj.AssemblyReference.cache
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinForms.353A6738.Up2Date
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Form3.resources
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Form4.resources
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormAltas.resources
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormBajas.resources
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormConsultas.resources
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormGrafica.resources
+C:\Users\Eliba\OneDrive\Desktop\Programacion ll\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormListado.resources
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\WinFormsProyectoFinal.exe
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\WinFormsProyectoFinal.deps.json
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\WinFormsProyectoFinal.runtimeconfig.json
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\WinFormsProyectoFinal.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\WinFormsProyectoFinal.pdb
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\BouncyCastle.Cryptography.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\Google.Protobuf.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\MySql.Data.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Security.Permissions.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Text.Encoding.CodePages.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Text.Json.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Windows.Extensions.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\ZstdSharp.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.csproj.AssemblyReference.cache
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Form1.resources
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Form2.resources
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Form3.resources
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Form4.resources
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormAltas.resources
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormBajas.resources
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormConsultas.resources
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormGrafica.resources
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormListado.resources
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Properties.Resources.resources
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.csproj.GenerateResource.cache
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.AssemblyInfoInputs.cache
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.AssemblyInfo.cs
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.csproj.CoreCompileInputs.cache
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinForms.353A6738.Up2Date
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\refint\WinFormsProyectoFinal.dll
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.pdb
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.genruntimeconfig.cache
+D:\Users\saraa\Downloads\Proyecto (3)\Proyecto\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\ref\WinFormsProyectoFinal.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\WinFormsProyectoFinal.exe
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\WinFormsProyectoFinal.deps.json
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\WinFormsProyectoFinal.runtimeconfig.json
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\WinFormsProyectoFinal.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\WinFormsProyectoFinal.pdb
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\BouncyCastle.Cryptography.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\Google.Protobuf.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\MySql.Data.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Security.Permissions.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Text.Encoding.CodePages.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Text.Json.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\System.Windows.Extensions.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\ZstdSharp.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.csproj.AssemblyReference.cache
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Form1.resources
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Form2.resources
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Form3.resources
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Form4.resources
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormAltas.resources
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormBajas.resources
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormConsultas.resources
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormGrafica.resources
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormListado.resources
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Properties.Resources.resources
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.csproj.GenerateResource.cache
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.AssemblyInfoInputs.cache
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.AssemblyInfo.cs
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.csproj.CoreCompileInputs.cache
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinForms.353A6738.Up2Date
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\refint\WinFormsProyectoFinal.dll
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.pdb
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.genruntimeconfig.cache
+D:\Users\saraa\Downloads\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\ref\WinFormsProyectoFinal.dll
