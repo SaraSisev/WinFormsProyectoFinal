@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Eliba\\source\\repos\\WinFormsProyectoFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|C:\\Users\\Eliba\\source\\repos\\WinFormsProyectoFinal\\winformsproyectofinal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\eliba\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -27,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\eliba\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\formgrafica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|C:\\Users\\Eliba\\source\\repos\\WinFormsProyectoFinal\\winformsproyectofinal\\formgrafica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formgrafica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -86,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 23,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -97,18 +97,6 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "FormGrafica.cs [Dise\u00F1o]",
@@ -117,8 +105,7 @@
               "ToolTip": "C:\\Users\\Eliba\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormGrafica.cs [Dise\u00F1o]",
               "RelativeToolTip": "WinFormsProyectoFinal\\FormGrafica.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T16:47:51.432Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-12-10T16:47:51.432Z"
             },
             {
               "$type": "Document",
@@ -150,8 +137,7 @@
               "ToolTip": "C:\\Users\\Eliba\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form2.cs [Dise\u00F1o]",
               "RelativeToolTip": "WinFormsProyectoFinal\\Form2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T16:14:51.589Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-12-08T16:14:51.589Z"
             },
             {
               "$type": "Document",
@@ -163,8 +149,7 @@
               "RelativeToolTip": "WinFormsProyectoFinal\\Form2.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T16:25:13.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T16:25:13.964Z"
             },
             {
               "$type": "Document",
@@ -296,8 +281,7 @@
               "ToolTip": "C:\\Users\\Eliba\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form3.cs [Dise\u00F1o]",
               "RelativeToolTip": "WinFormsProyectoFinal\\Form3.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T18:26:38.595Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-12-09T18:26:38.595Z"
             },
             {
               "$type": "Document",
@@ -309,8 +293,7 @@
               "RelativeToolTip": "WinFormsProyectoFinal\\Conexion.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAkwBsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T16:43:34.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T16:43:34.691Z"
             },
             {
               "$type": "Document",
