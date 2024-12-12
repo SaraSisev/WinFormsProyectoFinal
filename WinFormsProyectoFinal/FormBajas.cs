@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace WinFormsProyectoFinal
 {
     public partial class FormBajas : Form
     {
+        Conexion conn = new Conexion();//variable que nos permite establecer la conexion con la base de datos
         public FormBajas()
         {
             InitializeComponent();
@@ -22,6 +24,70 @@ namespace WinFormsProyectoFinal
             Form2 form2b = new Form2();
             form2b.Show();
             this.Hide();
+        }
+
+        private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand("select * from productos where id = @id", conn.conexionBD());
+                cmd.Parameters.AddWithValue("@id", textBoxBaID.Text);
+                MySqlDataReader lectura = cmd.ExecuteReader();//ejecutar una variable que leera la base de datos para encontrar el id buscado
+                //si la variable esta leyendo
+                if (lectura.Read())
+                {
+                    labelIDBus.Text = lectura["id"].ToString();
+                    labelImaBus.Text = lectura["imagen"].ToString();
+                    labelDesBus.Text = lectura["descripcion"].ToString();
+                    labelPrecioBus.Text = lectura["precio"].ToString();
+                    labelExiBus.Text = lectura["existencias"].ToString();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
+        }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand("delete from productos where id = @id", conn.conexionBD());
+                cmd.Parameters.AddWithValue("@id", textBoxBaID.Text);//num que sera buscado para eliminar
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("El registro ha sido eliminado");
+                }
+                else
+                {
+                    MessageBox.Show("\"El id igresado no existe dentro de la BD");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void FormBajas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelPrecioBus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelExiBus_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
