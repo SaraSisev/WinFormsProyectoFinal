@@ -35,7 +35,7 @@ namespace WinFormsProyectoFinal
                 MySqlDataAdapter da;
                 MySqlConnection conn = con.conexionBD();
 
-                string consulta = "SELECT * FROM proyectogina.productos";//sintaxis que indica que se realizará una extracción de todos los datos de la base de datos productos
+                string consulta = "SELECT * FROM proyectogina.productos ORDER BY existencias ASC";//sintaxis que indica que se realizará una extracción de todos los datos de la base de datos productos
                 MySqlCommand cmd = new MySqlCommand(consulta, conn);
                 da = new MySqlDataAdapter(cmd);
 
