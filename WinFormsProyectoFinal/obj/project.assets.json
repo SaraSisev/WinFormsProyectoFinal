@@ -1553,19 +1553,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Eliba\\.nuget\\packages\\": {}
+    "C:\\Users\\lenovo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Eliba\\Source\\Repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj",
+      "projectUniqueName": "C:\\Users\\lenovo\\Source\\Repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj",
       "projectName": "WinFormsProyectoFinal",
-      "projectPath": "C:\\Users\\Eliba\\Source\\Repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj",
-      "packagesPath": "C:\\Users\\Eliba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Eliba\\Source\\Repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\obj\\",
+      "projectPath": "C:\\Users\\lenovo\\Source\\Repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj",
+      "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lenovo\\Source\\Repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Eliba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1589,8 +1594,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -1620,8 +1626,20 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"System.Text.Json\" 8.0.4 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-8g4q-xg66-9fp4",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }
