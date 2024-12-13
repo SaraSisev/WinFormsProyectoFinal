@@ -44,6 +44,7 @@ namespace WinFormsProyectoFinal
                     if (textBoxCuenta.Text == cuentasRegistradas && textBoxConstrasena.Text == contrasRegistradas)
                     {
                         cuentaValida = true;//indica que la cuenta si existe ya que se encontro
+                        DatosUsuario.Nombre = reader["nombre"].ToString();//almacenar el nombre del usuario que accedio para asi mostrarlo en otros forms
                         break;//salir de bucle cuando se encuentra la cuenta deseada
                     }
                 }
@@ -58,7 +59,7 @@ namespace WinFormsProyectoFinal
                    }
                    else//si la cuenta encontrada es de algun usuario se abre el form 3
                    {
-                        Form3 form3 = new Form3();
+                        Form3 form3 = new Form3(DatosUsuario.Nombre);
                         form3.Show();
                         this.Hide();
                    }

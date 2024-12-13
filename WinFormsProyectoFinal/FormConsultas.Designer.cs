@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             buttonLogoutC = new Button();
+            labelVentasTotales = new Label();
             SuspendLayout();
             // 
             // buttonLogoutC
@@ -41,19 +42,32 @@
             buttonLogoutC.UseVisualStyleBackColor = true;
             buttonLogoutC.Click += buttonLogoutC_Click;
             // 
+            // labelVentasTotales
+            // 
+            labelVentasTotales.AutoSize = true;
+            labelVentasTotales.Location = new Point(100, 122);
+            labelVentasTotales.Name = "labelVentasTotales";
+            labelVentasTotales.Size = new Size(59, 25);
+            labelVentasTotales.TabIndex = 1;
+            labelVentasTotales.Text = "label1";
+            // 
             // FormConsultas
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(labelVentasTotales);
             Controls.Add(buttonLogoutC);
             Name = "FormConsultas";
             Text = "FormConsultas";
+            Load += FormConsultas_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button buttonLogoutC;
+        private Label labelVentasTotales;
     }
 }
