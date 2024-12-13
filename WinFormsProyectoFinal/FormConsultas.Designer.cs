@@ -34,9 +34,10 @@
             // 
             // buttonLogoutC
             // 
-            buttonLogoutC.Location = new Point(664, 404);
+            buttonLogoutC.Location = new Point(471, 11);
+            buttonLogoutC.Margin = new Padding(2, 2, 2, 2);
             buttonLogoutC.Name = "buttonLogoutC";
-            buttonLogoutC.Size = new Size(112, 34);
+            buttonLogoutC.Size = new Size(78, 20);
             buttonLogoutC.TabIndex = 0;
             buttonLogoutC.Text = "LogOut";
             buttonLogoutC.UseVisualStyleBackColor = true;
@@ -45,19 +46,21 @@
             // labelVentasTotales
             // 
             labelVentasTotales.AutoSize = true;
-            labelVentasTotales.Location = new Point(100, 122);
+            labelVentasTotales.Location = new Point(70, 73);
+            labelVentasTotales.Margin = new Padding(2, 0, 2, 0);
             labelVentasTotales.Name = "labelVentasTotales";
-            labelVentasTotales.Size = new Size(59, 25);
+            labelVentasTotales.Size = new Size(38, 15);
             labelVentasTotales.TabIndex = 1;
             labelVentasTotales.Text = "label1";
             // 
             // FormConsultas
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(560, 270);
             Controls.Add(labelVentasTotales);
             Controls.Add(buttonLogoutC);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "FormConsultas";
             Text = "FormConsultas";
             Load += FormConsultas_Load;

@@ -21,7 +21,7 @@ namespace WinFormsProyectoFinal
                 if (cadenaConexion.State == System.Data.ConnectionState.Closed)//si el estado de la conexion esta cerrada
                 {
                     cadenaConexion.Open();//se abre la conexion
-                    MessageBox.Show("Conexion establecida");//muestra el mensaje de que hemos conectado a la base de datos
+                    
                 }
 
             }

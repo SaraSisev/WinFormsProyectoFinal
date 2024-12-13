@@ -28,32 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormListado));
             buttonLogoutL = new Button();
+            pictureBox1 = new PictureBox();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // buttonLogoutL
             // 
-            buttonLogoutL.Location = new Point(676, 404);
+            buttonLogoutL.Location = new Point(737, 11);
+            buttonLogoutL.Margin = new Padding(2);
             buttonLogoutL.Name = "buttonLogoutL";
-            buttonLogoutL.Size = new Size(112, 34);
+            buttonLogoutL.Size = new Size(78, 20);
             buttonLogoutL.TabIndex = 0;
             buttonLogoutL.Text = "LogOut";
             buttonLogoutL.UseVisualStyleBackColor = true;
             buttonLogoutL.Click += buttonLogoutL_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(771, 298);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(44, 38);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click_1;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(12, 36);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(678, 300);
+            dataGridView1.TabIndex = 2;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
             // FormListado
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(827, 348);
+            Controls.Add(dataGridView1);
+            Controls.Add(pictureBox1);
             Controls.Add(buttonLogoutL);
+            Margin = new Padding(2);
             Name = "FormListado";
             Text = "FormListado";
+            Load += FormListado_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button buttonLogoutL;
+        private PictureBox pictureBox1;
+        private DataGridView dataGridView1;
     }
 }

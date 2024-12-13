@@ -27,7 +27,7 @@ namespace WinFormsProyectoFinal
 
         private void buttonAgregar_Click(object sender, EventArgs e)
         {
-            
+
 
         }
 
@@ -38,6 +38,7 @@ namespace WinFormsProyectoFinal
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Abrir el explorador de archivos para insertar una imagen usando openFile
             OpenFileDialog opf = new OpenFileDialog();
             opf.Filter = "Choose Image(*.jpg; *.png; *.gif)|*.jpg; *.png; *.gif";
             if (opf.ShowDialog() == DialogResult.OK)
@@ -48,6 +49,7 @@ namespace WinFormsProyectoFinal
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
+            //Regresar al boton de inicio
             Form4 inicio = new Form4();
             inicio.Show();
             this.Close();
@@ -64,6 +66,7 @@ namespace WinFormsProyectoFinal
                 byte[] img = ms.ToArray();
 
                 MySqlCommand cmd1 = new MySqlCommand("insert into productos (id,imagen,descripcion,precio,existencias,ventas) values (@id, @imagen, @descripcion, @precio, @existencias, @ventas)", conn.conexionBD());
+                //Insertamos los valores en el formulario dentro de los campos de la base de datos
                 cmd1.Parameters.AddWithValue("@id", numId.Value);
                 cmd1.Parameters.AddWithValue("@imagen", img);
                 cmd1.Parameters.AddWithValue("@descripcion", richTextBoxAlDes.Text);
@@ -77,6 +80,11 @@ namespace WinFormsProyectoFinal
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
