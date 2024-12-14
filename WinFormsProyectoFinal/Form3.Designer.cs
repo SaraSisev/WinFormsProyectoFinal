@@ -30,8 +30,8 @@
         {
             buttonlogout = new Button();
             labelNombreUsuario = new Label();
-            label2 = new Label();
-            label3 = new Label();
+            dataGridViewProductos = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewProductos).BeginInit();
             SuspendLayout();
             // 
             // buttonlogout
@@ -47,42 +47,34 @@
             // labelNombreUsuario
             // 
             labelNombreUsuario.AutoSize = true;
-            labelNombreUsuario.Location = new Point(163, 179);
+            labelNombreUsuario.Location = new Point(685, 24);
             labelNombreUsuario.Name = "labelNombreUsuario";
             labelNombreUsuario.Size = new Size(59, 25);
             labelNombreUsuario.TabIndex = 1;
             labelNombreUsuario.Text = "label1";
             // 
-            // label2
+            // dataGridViewProductos
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(465, 164);
-            label2.Name = "label2";
-            label2.Size = new Size(59, 25);
-            label2.TabIndex = 2;
-            label2.Text = "label2";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(323, 287);
-            label3.Name = "label3";
-            label3.Size = new Size(59, 25);
-            label3.TabIndex = 3;
-            label3.Text = "label3";
+            dataGridViewProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewProductos.Location = new Point(257, 109);
+            dataGridViewProductos.Name = "dataGridViewProductos";
+            dataGridViewProductos.RowHeadersWidth = 62;
+            dataGridViewProductos.RowTemplate.Height = 33;
+            dataGridViewProductos.Size = new Size(360, 225);
+            dataGridViewProductos.TabIndex = 4;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(dataGridViewProductos);
             Controls.Add(labelNombreUsuario);
             Controls.Add(buttonlogout);
             Name = "Form3";
             Text = "Form3";
             Load += Form3_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridViewProductos).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -91,7 +83,6 @@
 
         private Button buttonlogout;
         private Label labelNombreUsuario;
-        private Label label2;
-        private Label label3;
+        private DataGridView dataGridViewProductos;
     }
 }

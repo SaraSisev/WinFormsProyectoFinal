@@ -34,7 +34,52 @@ namespace WinFormsProyectoFinal
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            mostrarProductos();
+        }
+        private void mostrarProductos()
+        {
+            try
+            {
+                Conexion conexio = new Conexion();
+                MySqlConnection con = conexio.conexionBD();
 
+                string busqueda = "select id, imagen, descripcion, precio, existencias from productos";
+                MySqlCommand cmd = new MySqlCommand(busqueda, con);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);//adaptador que nos ayudara a llenar la tabla con los datos de la base de datos ejecutando la busqueda 
+                DataTable tabla = new DataTable();//creamos una tabla para mostrar los datos en el data grid view
+                adapter.Fill(tabla);//mandamos al metodo de llenar y mandamos como parametro la tabla para ahi guardar los datos obtenidos
+                dataGridViewProductos.DataSource = tabla;//asignamos la tabla al datagrid
+
+                //configuracion para la columna que tendra la imagen
+                if (dataGridViewProductos.Columns["imagen"] != null)
+                {
+                    DataGridViewImageColumn imageColumn = (DataGridViewImageColumn)dataGridViewProductos.Columns["imagen"];//se crea la columna de imagen
+                    imageColumn = (DataGridViewImageColumn)dataGridViewProductos.Columns["imagen"];
+                    imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;//establecer su modo de visualizacion
+                }
+                dataGridViewProductos.CellFormatting += dataGridViewProductosCellFormatting;//asingarle al evento Cellformatting una funcion que transforma la imagen para mostrarla
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void dataGridViewProductosCellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            //comprobar que la columna actual sea imagen y comprobar que el valor de la celda no este en nulo
+            if (dataGridViewProductos.Columns[e.ColumnIndex].Name == "imagen" && e.Value != null)
+            {
+                byte[] imagenBytes = e.Value as byte[];//convertir el valor de la celda byte[] a imagen
+                if (imagenBytes != null)
+                {
+                    using (MemoryStream ms = new MemoryStream(imagenBytes))
+                    {
+                        e.Value = Image.FromStream(ms);//asignacion de la imagen convertida a la celda
+                    }
+                }
+            }
         }
     }
+
 }
