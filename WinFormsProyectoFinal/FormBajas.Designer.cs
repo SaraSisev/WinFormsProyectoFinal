@@ -29,49 +29,46 @@
         private void InitializeComponent()
         {
             buttonLogoutB = new Button();
-            textBoxBaID = new TextBox();
             labelBajasID = new Label();
             buttonBuscar = new Button();
             buttonEliminar = new Button();
             labelIDBus = new Label();
             labelPrecioBus = new Label();
             labelExiBus = new Label();
-            labelImaBus = new Label();
             labelDesBus = new Label();
+            boxId = new ComboBox();
+            pictureBox1 = new PictureBox();
+            labelVenBus = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // buttonLogoutB
             // 
-            buttonLogoutB.Location = new Point(676, 404);
+            buttonLogoutB.Location = new Point(607, 306);
+            buttonLogoutB.Margin = new Padding(2);
             buttonLogoutB.Name = "buttonLogoutB";
-            buttonLogoutB.Size = new Size(112, 34);
+            buttonLogoutB.Size = new Size(78, 20);
             buttonLogoutB.TabIndex = 0;
             buttonLogoutB.Text = "LogOut";
             buttonLogoutB.UseVisualStyleBackColor = true;
             buttonLogoutB.Click += buttonLogoutB_Click;
             // 
-            // textBoxBaID
-            // 
-            textBoxBaID.Location = new Point(72, 79);
-            textBoxBaID.Name = "textBoxBaID";
-            textBoxBaID.PlaceholderText = "ID";
-            textBoxBaID.Size = new Size(150, 31);
-            textBoxBaID.TabIndex = 1;
-            // 
             // labelBajasID
             // 
             labelBajasID.AutoSize = true;
-            labelBajasID.Location = new Point(83, 36);
+            labelBajasID.Location = new Point(58, 22);
+            labelBajasID.Margin = new Padding(2, 0, 2, 0);
             labelBajasID.Name = "labelBajasID";
-            labelBajasID.Size = new Size(300, 25);
+            labelBajasID.Size = new Size(197, 15);
             labelBajasID.TabIndex = 2;
             labelBajasID.Text = "Ingrese el ID del producto a eliminar";
             // 
             // buttonBuscar
             // 
-            buttonBuscar.Location = new Point(72, 153);
+            buttonBuscar.Location = new Point(50, 92);
+            buttonBuscar.Margin = new Padding(2);
             buttonBuscar.Name = "buttonBuscar";
-            buttonBuscar.Size = new Size(112, 34);
+            buttonBuscar.Size = new Size(78, 20);
             buttonBuscar.TabIndex = 3;
             buttonBuscar.Text = "Buscar";
             buttonBuscar.UseVisualStyleBackColor = true;
@@ -79,9 +76,10 @@
             // 
             // buttonEliminar
             // 
-            buttonEliminar.Location = new Point(324, 385);
+            buttonEliminar.Location = new Point(25, 294);
+            buttonEliminar.Margin = new Padding(2);
             buttonEliminar.Name = "buttonEliminar";
-            buttonEliminar.Size = new Size(112, 34);
+            buttonEliminar.Size = new Size(78, 20);
             buttonEliminar.TabIndex = 4;
             buttonEliminar.Text = "Eliminar";
             buttonEliminar.UseVisualStyleBackColor = true;
@@ -90,17 +88,20 @@
             // labelIDBus
             // 
             labelIDBus.AutoSize = true;
-            labelIDBus.Location = new Point(324, 85);
+            labelIDBus.Location = new Point(308, 22);
+            labelIDBus.Margin = new Padding(2, 0, 2, 0);
             labelIDBus.Name = "labelIDBus";
-            labelIDBus.Size = new Size(0, 25);
+            labelIDBus.Size = new Size(32, 15);
             labelIDBus.TabIndex = 5;
+            labelIDBus.Text = "label";
             // 
             // labelPrecioBus
             // 
             labelPrecioBus.AutoSize = true;
-            labelPrecioBus.Location = new Point(324, 268);
+            labelPrecioBus.Location = new Point(310, 48);
+            labelPrecioBus.Margin = new Padding(2, 0, 2, 0);
             labelPrecioBus.Name = "labelPrecioBus";
-            labelPrecioBus.Size = new Size(59, 25);
+            labelPrecioBus.Size = new Size(38, 15);
             labelPrecioBus.TabIndex = 6;
             labelPrecioBus.Text = "label1";
             labelPrecioBus.Click += labelPrecioBus_Click;
@@ -108,49 +109,73 @@
             // labelExiBus
             // 
             labelExiBus.AutoSize = true;
-            labelExiBus.Location = new Point(324, 320);
+            labelExiBus.Location = new Point(310, 79);
+            labelExiBus.Margin = new Padding(2, 0, 2, 0);
             labelExiBus.Name = "labelExiBus";
-            labelExiBus.Size = new Size(59, 25);
+            labelExiBus.Size = new Size(38, 15);
             labelExiBus.TabIndex = 7;
             labelExiBus.Text = "label1";
             labelExiBus.Click += labelExiBus_Click;
             // 
-            // labelImaBus
-            // 
-            labelImaBus.AutoSize = true;
-            labelImaBus.Location = new Point(324, 131);
-            labelImaBus.Name = "labelImaBus";
-            labelImaBus.Size = new Size(59, 25);
-            labelImaBus.TabIndex = 8;
-            labelImaBus.Text = "label1";
-            // 
             // labelDesBus
             // 
-            labelDesBus.AutoSize = true;
-            labelDesBus.Location = new Point(324, 212);
+            labelDesBus.Location = new Point(294, 196);
+            labelDesBus.Margin = new Padding(2, 0, 2, 0);
             labelDesBus.Name = "labelDesBus";
-            labelDesBus.Size = new Size(59, 25);
+            labelDesBus.Size = new Size(192, 102);
             labelDesBus.TabIndex = 9;
             labelDesBus.Text = "label1";
+            labelDesBus.Click += labelDesBus_Click;
+            // 
+            // boxId
+            // 
+            boxId.DropDownStyle = ComboBoxStyle.DropDownList;
+            boxId.FormattingEnabled = true;
+            boxId.Location = new Point(50, 48);
+            boxId.Name = "boxId";
+            boxId.Size = new Size(121, 23);
+            boxId.TabIndex = 10;
+            boxId.SelectedIndexChanged += boxId_SelectedIndexChanged;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(423, 22);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(178, 145);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
+            // 
+            // labelVenBus
+            // 
+            labelVenBus.AutoSize = true;
+            labelVenBus.Location = new Point(308, 106);
+            labelVenBus.Name = "labelVenBus";
+            labelVenBus.Size = new Size(38, 15);
+            labelVenBus.TabIndex = 12;
+            labelVenBus.Text = "label1";
             // 
             // FormBajas
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(697, 337);
+            Controls.Add(labelVenBus);
+            Controls.Add(pictureBox1);
+            Controls.Add(boxId);
             Controls.Add(labelDesBus);
-            Controls.Add(labelImaBus);
             Controls.Add(labelExiBus);
             Controls.Add(labelPrecioBus);
             Controls.Add(labelIDBus);
             Controls.Add(buttonEliminar);
             Controls.Add(buttonBuscar);
             Controls.Add(labelBajasID);
-            Controls.Add(textBoxBaID);
             Controls.Add(buttonLogoutB);
+            Margin = new Padding(2);
             Name = "FormBajas";
             Text = "FormBajas";
             Load += FormBajas_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -165,7 +190,9 @@
         private Label labelIDBus;
         private Label labelPrecioBus;
         private Label labelExiBus;
-        private Label labelImaBus;
         private Label labelDesBus;
+        private ComboBox boxId;
+        private PictureBox pictureBox1;
+        private Label labelVenBus;
     }
 }

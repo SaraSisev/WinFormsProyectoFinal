@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using OpenTK.Audio.OpenAL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +14,11 @@ namespace WinFormsProyectoFinal
 {
     public partial class FormBajas : Form
     {
+        //Conexion conn1 = new Conexion();//variable que nos permite establecer la conexion con la base de datos
         Conexion conn = new Conexion();//variable que nos permite establecer la conexion con la base de datos
+
+
+
         public FormBajas()
         {
             InitializeComponent();
@@ -31,16 +36,21 @@ namespace WinFormsProyectoFinal
             try
             {
                 MySqlCommand cmd = new MySqlCommand("select * from productos where id = @id", conn.conexionBD());
-                cmd.Parameters.AddWithValue("@id", textBoxBaID.Text);
+                cmd.Parameters.AddWithValue("@id", boxId.SelectedValue);
                 MySqlDataReader lectura = cmd.ExecuteReader();//ejecutar una variable que leera la base de datos para encontrar el id buscado
                 //si la variable esta leyendo
                 if (lectura.Read())
                 {
                     labelIDBus.Text = lectura["id"].ToString();
-                    labelImaBus.Text = lectura["imagen"].ToString();
+                    byte[] img = (byte[])lectura["imagen"];
                     labelDesBus.Text = lectura["descripcion"].ToString();
                     labelPrecioBus.Text = lectura["precio"].ToString();
                     labelExiBus.Text = lectura["existencias"].ToString();
+                    labelVenBus.Text = lectura["ventas"].ToString();
+
+                    MemoryStream ms = new MemoryStream(img);
+                    pictureBox1.Image = Image.FromStream(ms);
+
 
                 }
             }
@@ -56,7 +66,7 @@ namespace WinFormsProyectoFinal
             try
             {
                 MySqlCommand cmd = new MySqlCommand("delete from productos where id = @id", conn.conexionBD());
-                cmd.Parameters.AddWithValue("@id", textBoxBaID.Text);//num que sera buscado para eliminar
+                cmd.Parameters.AddWithValue("@id", boxId.SelectedValue);//num que sera buscado para eliminar
 
                 int rowsAffected = cmd.ExecuteNonQuery();
 
@@ -77,7 +87,20 @@ namespace WinFormsProyectoFinal
 
         private void FormBajas_Load(object sender, EventArgs e)
         {
+            string query = "SELECT id FROM productos";
+            boxId.DataSource = getData(query);
+            boxId.ValueMember = "id";
 
+            boxId_SelectedIndexChanged(null, null);
+        }
+
+        public DataTable getData(string query)
+        {
+            MySqlCommand comand = new MySqlCommand(query, conn.conexionBD());
+            MySqlDataAdapter adapter = new MySqlDataAdapter(comand);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
         }
 
         private void labelPrecioBus_Click(object sender, EventArgs e)
@@ -86,6 +109,19 @@ namespace WinFormsProyectoFinal
         }
 
         private void labelExiBus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boxId_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int val;
+            Int32.TryParse(boxId.SelectedValue.ToString(), out val);
+            //string query = "SELECT 'id', 'imagen', 'descripcion', 'precio', 'existencias', 'ventas' FROM 'productos' WHERE 'id' = " + val;
+
+        }
+
+        private void labelDesBus_Click(object sender, EventArgs e)
         {
 
         }

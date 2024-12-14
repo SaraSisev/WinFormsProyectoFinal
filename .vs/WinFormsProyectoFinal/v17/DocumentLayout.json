@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\lenovo\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\formlistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formlistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\lenovo\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\formlistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formlistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\winformsproyectofinal\\formconsultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formconsultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\lenovo\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\winformsproyectofinal\\formbajas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\lenovo\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\formbajas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formbajas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\lenovo\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\formbajas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formbajas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\lenovo\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\formaltas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formaltas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\lenovo\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\lenovo\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\formaltas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formaltas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,57 +58,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormListado.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormListado.cs",
-              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormListado.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormListado.cs",
-              "RelativeToolTip": "WinFormsProyectoFinal\\FormListado.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAABEAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Conexion.cs",
+              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Conexion.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Conexion.cs",
+              "RelativeToolTip": "WinFormsProyectoFinal\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T21:28:21.107Z",
+              "WhenOpened": "2024-12-14T02:57:03.545Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormListado.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormListado.cs",
-              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormListado.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormListado.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WinFormsProyectoFinal\\FormListado.cs [Dise\u00F1o]",
+              "Title": "FormAltas.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormAltas.cs",
+              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormAltas.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormAltas.cs",
+              "RelativeToolTip": "WinFormsProyectoFinal\\FormAltas.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAiwEEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T21:28:19.24Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormConsultas.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormConsultas.cs",
-              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormConsultas.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormConsultas.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WinFormsProyectoFinal\\FormConsultas.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T19:24:33.422Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormBajas.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormBajas.cs",
-              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormBajas.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormBajas.cs",
-              "RelativeToolTip": "WinFormsProyectoFinal\\FormBajas.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAABgAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T19:22:56.902Z",
+              "WhenOpened": "2024-12-14T02:49:46.142Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "FormAltas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormAltas.cs",
+              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormAltas.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormAltas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WinFormsProyectoFinal\\FormAltas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T02:49:42.972Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "FormBajas.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormBajas.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormBajas.cs",
@@ -124,18 +104,6 @@
               "RelativeToolTip": "WinFormsProyectoFinal\\FormBajas.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T19:22:08.651Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form4.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form4.cs",
-              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Form4.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form4.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WinFormsProyectoFinal\\Form4.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T19:08:20.583Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
