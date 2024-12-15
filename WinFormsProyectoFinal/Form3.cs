@@ -58,6 +58,7 @@ namespace WinFormsProyectoFinal
                     imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;//establecer su modo de visualizacion
                 }
                 dataGridViewProductos.CellFormatting += dataGridViewProductosCellFormatting;//asingarle al evento Cellformatting una funcion que transforma la imagen para mostrarla
+                dataGridViewProductos.CellClick += dataGridViewProductosCellClick;
             }
             catch (Exception ex)
             {
@@ -80,6 +81,30 @@ namespace WinFormsProyectoFinal
                 }
             }
         }
+
+        private void dataGridViewProductosCellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridViewProductos.Rows[e.RowIndex];
+                byte[] imagenBytes = row.Cells["imagen"].Value as byte[];
+                Image imagen = transformacionImagen(imagenBytes);
+                string descripcion = row.Cells["descripcion"].Value.ToString();
+                decimal precio = Convert.ToDecimal(row.Cells["precio"].Value);
+                int existencias = Convert.ToInt32(row.Cells["existencias"].Value);
+
+                FormProducto formProducto = new FormProducto(imagen, descripcion, precio, existencias);
+                formProducto.Show();
+            }
+        }
+        private Image transformacionImagen(byte[] byteArray)
+        {
+            using (MemoryStream ms = new MemoryStream(byteArray))
+            {
+                return Image.FromStream(ms);
+            }
+        }
+
     }
 
 }
