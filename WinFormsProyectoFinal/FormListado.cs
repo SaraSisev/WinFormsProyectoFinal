@@ -58,12 +58,14 @@ namespace WinFormsProyectoFinal
                 imageColum = (DataGridViewImageColumn)dataGridView1.Columns[1];
                 imageColum.ImageLayout = DataGridViewImageCellLayout.Stretch;
                 
+                //Imagen
                 dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.None; // Desactivar el ajuste automático
                 dataGridView1.Columns[1].Width = 75; // Establecer el ancho específico
 
-                dataGridView1.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.None; // Desactivar el ajuste automático
-                dataGridView1.Columns[2].Width = 298; // Establecer el ancho específico
-                dataGridView1.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // Configurar la columna específica
+                //Descripcion
+                dataGridView1.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.None; // Desactivar el ajuste automático
+                dataGridView1.Columns[3].Width = 298; // Establecer el ancho específico
+                dataGridView1.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // Configurar la columna específica
 
                 da.Dispose();
             }

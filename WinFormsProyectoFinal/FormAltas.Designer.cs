@@ -41,6 +41,7 @@
             numVentas = new NumericUpDown();
             label1 = new Label();
             label2 = new Label();
+            textBoxNombre = new TextBox();
             ((System.ComponentModel.ISupportInitialize)btnRegresar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numId).BeginInit();
@@ -61,7 +62,7 @@
             // 
             // textBoxAlPre
             // 
-            textBoxAlPre.Location = new Point(48, 170);
+            textBoxAlPre.Location = new Point(48, 191);
             textBoxAlPre.Margin = new Padding(2);
             textBoxAlPre.Name = "textBoxAlPre";
             textBoxAlPre.PlaceholderText = "Precio";
@@ -71,7 +72,7 @@
             // 
             // richTextBoxAlDes
             // 
-            richTextBoxAlDes.Location = new Point(48, 69);
+            richTextBoxAlDes.Location = new Point(48, 90);
             richTextBoxAlDes.Margin = new Padding(2);
             richTextBoxAlDes.Name = "richTextBoxAlDes";
             richTextBoxAlDes.Size = new Size(106, 88);
@@ -80,7 +81,7 @@
             // 
             // buttonAgregar
             // 
-            buttonAgregar.Location = new Point(11, 327);
+            buttonAgregar.Location = new Point(11, 348);
             buttonAgregar.Margin = new Padding(2);
             buttonAgregar.Name = "buttonAgregar";
             buttonAgregar.Size = new Size(78, 20);
@@ -122,21 +123,21 @@
             // 
             // numId
             // 
-            numId.Location = new Point(48, 41);
+            numId.Location = new Point(48, 29);
             numId.Name = "numId";
-            numId.Size = new Size(120, 23);
+            numId.Size = new Size(64, 23);
             numId.TabIndex = 10;
             // 
             // numExistencias
             // 
-            numExistencias.Location = new Point(48, 231);
+            numExistencias.Location = new Point(48, 252);
             numExistencias.Name = "numExistencias";
             numExistencias.Size = new Size(120, 23);
             numExistencias.TabIndex = 11;
             // 
             // numVentas
             // 
-            numVentas.Location = new Point(48, 285);
+            numVentas.Location = new Point(48, 306);
             numVentas.Name = "numVentas";
             numVentas.Size = new Size(120, 23);
             numVentas.TabIndex = 12;
@@ -144,7 +145,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(48, 213);
+            label1.Location = new Point(48, 234);
             label1.Name = "label1";
             label1.Size = new Size(64, 15);
             label1.TabIndex = 13;
@@ -153,17 +154,26 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(51, 267);
+            label2.Location = new Point(51, 288);
             label2.Name = "label2";
             label2.Size = new Size(41, 15);
             label2.TabIndex = 14;
             label2.Text = "Ventas";
             // 
+            // textBoxNombre
+            // 
+            textBoxNombre.Location = new Point(51, 58);
+            textBoxNombre.Name = "textBoxNombre";
+            textBoxNombre.PlaceholderText = "Nombre";
+            textBoxNombre.Size = new Size(100, 23);
+            textBoxNombre.TabIndex = 15;
+            // 
             // FormAltas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(560, 358);
+            ClientSize = new Size(560, 380);
+            Controls.Add(textBoxNombre);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(numVentas);
@@ -179,6 +189,7 @@
             Margin = new Padding(2);
             Name = "FormAltas";
             Text = "FormAltas";
+            Load += FormAltas_Load;
             ((System.ComponentModel.ISupportInitialize)btnRegresar).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)numId).EndInit();
@@ -202,5 +213,6 @@
         private NumericUpDown numVentas;
         private Label label1;
         private Label label2;
+        private TextBox textBoxNombre;
     }
 }

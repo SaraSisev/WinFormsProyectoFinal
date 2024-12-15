@@ -65,10 +65,11 @@ namespace WinFormsProyectoFinal
                 pictureBox2.Image.Save(ms, pictureBox2.Image.RawFormat);
                 byte[] img = ms.ToArray();
 
-                MySqlCommand cmd1 = new MySqlCommand("insert into productos (id,imagen,descripcion,precio,existencias,ventas) values (@id, @imagen, @descripcion, @precio, @existencias, @ventas)", conn.conexionBD());
+                MySqlCommand cmd1 = new MySqlCommand("insert into productos (id,imagen,nombre,descripcion,precio,existencias,ventas) values (@id, @imagen, @nombre, @descripcion, @precio, @existencias, @ventas)", conn.conexionBD());
                 //Insertamos los valores en el formulario dentro de los campos de la base de datos
                 cmd1.Parameters.AddWithValue("@id", numId.Value);
                 cmd1.Parameters.AddWithValue("@imagen", img);
+                cmd1.Parameters.AddWithValue("@nombre", textBoxNombre.Text);
                 cmd1.Parameters.AddWithValue("@descripcion", richTextBoxAlDes.Text);
                 cmd1.Parameters.AddWithValue("@precio", textBoxAlPre.Text);
                 cmd1.Parameters.AddWithValue("@existencias", numExistencias.Value);
@@ -83,6 +84,11 @@ namespace WinFormsProyectoFinal
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormAltas_Load(object sender, EventArgs e)
         {
 
         }

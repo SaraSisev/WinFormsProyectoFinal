@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBajas));
             buttonLogoutB = new Button();
             labelBajasID = new Label();
             buttonBuscar = new Button();
@@ -39,12 +40,15 @@
             boxId = new ComboBox();
             pictureBox1 = new PictureBox();
             labelVenBus = new Label();
+            btnRegresar = new PictureBox();
+            labelNombre = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnRegresar).BeginInit();
             SuspendLayout();
             // 
             // buttonLogoutB
             // 
-            buttonLogoutB.Location = new Point(607, 306);
+            buttonLogoutB.Location = new Point(608, 11);
             buttonLogoutB.Margin = new Padding(2);
             buttonLogoutB.Name = "buttonLogoutB";
             buttonLogoutB.Size = new Size(78, 20);
@@ -98,7 +102,7 @@
             // labelPrecioBus
             // 
             labelPrecioBus.AutoSize = true;
-            labelPrecioBus.Location = new Point(310, 48);
+            labelPrecioBus.Location = new Point(304, 94);
             labelPrecioBus.Margin = new Padding(2, 0, 2, 0);
             labelPrecioBus.Name = "labelPrecioBus";
             labelPrecioBus.Size = new Size(38, 15);
@@ -109,7 +113,7 @@
             // labelExiBus
             // 
             labelExiBus.AutoSize = true;
-            labelExiBus.Location = new Point(310, 79);
+            labelExiBus.Location = new Point(304, 125);
             labelExiBus.Margin = new Padding(2, 0, 2, 0);
             labelExiBus.Name = "labelExiBus";
             labelExiBus.Size = new Size(38, 15);
@@ -149,17 +153,39 @@
             // labelVenBus
             // 
             labelVenBus.AutoSize = true;
-            labelVenBus.Location = new Point(308, 106);
+            labelVenBus.Location = new Point(302, 152);
             labelVenBus.Name = "labelVenBus";
             labelVenBus.Size = new Size(38, 15);
             labelVenBus.TabIndex = 12;
             labelVenBus.Text = "label1";
+            // 
+            // btnRegresar
+            // 
+            btnRegresar.Image = (Image)resources.GetObject("btnRegresar.Image");
+            btnRegresar.Location = new Point(640, 285);
+            btnRegresar.Name = "btnRegresar";
+            btnRegresar.Size = new Size(46, 40);
+            btnRegresar.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnRegresar.TabIndex = 13;
+            btnRegresar.TabStop = false;
+            btnRegresar.Click += pictureBox2_Click;
+            // 
+            // labelNombre
+            // 
+            labelNombre.AutoSize = true;
+            labelNombre.Location = new Point(305, 54);
+            labelNombre.Name = "labelNombre";
+            labelNombre.Size = new Size(38, 15);
+            labelNombre.TabIndex = 14;
+            labelNombre.Text = "label1";
             // 
             // FormBajas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(697, 337);
+            Controls.Add(labelNombre);
+            Controls.Add(btnRegresar);
             Controls.Add(labelVenBus);
             Controls.Add(pictureBox1);
             Controls.Add(boxId);
@@ -176,6 +202,7 @@
             Text = "FormBajas";
             Load += FormBajas_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnRegresar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -194,5 +221,7 @@
         private ComboBox boxId;
         private PictureBox pictureBox1;
         private Label labelVenBus;
+        private PictureBox btnRegresar;
+        private Label labelNombre;
     }
 }

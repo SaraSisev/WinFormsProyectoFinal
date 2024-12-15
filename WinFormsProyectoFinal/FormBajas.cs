@@ -14,10 +14,7 @@ namespace WinFormsProyectoFinal
 {
     public partial class FormBajas : Form
     {
-        //Conexion conn1 = new Conexion();//variable que nos permite establecer la conexion con la base de datos
         Conexion conn = new Conexion();//variable que nos permite establecer la conexion con la base de datos
-
-
 
         public FormBajas()
         {
@@ -43,6 +40,7 @@ namespace WinFormsProyectoFinal
                 {
                     labelIDBus.Text = lectura["id"].ToString();
                     byte[] img = (byte[])lectura["imagen"];
+                    labelNombre.Text = lectura["nombre"].ToString();
                     labelDesBus.Text = lectura["descripcion"].ToString();
                     labelPrecioBus.Text = lectura["precio"].ToString();
                     labelExiBus.Text = lectura["existencias"].ToString();
@@ -53,6 +51,7 @@ namespace WinFormsProyectoFinal
 
 
                 }
+
             }
             catch (Exception ex)
             {
@@ -78,6 +77,7 @@ namespace WinFormsProyectoFinal
                 {
                     MessageBox.Show("\"El id igresado no existe dentro de la BD");
                 }
+               
             }
             catch (Exception ex)
             {
@@ -117,13 +117,20 @@ namespace WinFormsProyectoFinal
         {
             int val;
             Int32.TryParse(boxId.SelectedValue.ToString(), out val);
-            //string query = "SELECT 'id', 'imagen', 'descripcion', 'precio', 'existencias', 'ventas' FROM 'productos' WHERE 'id' = " + val;
 
         }
 
         private void labelDesBus_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            //Regresar al boton de inicio
+            Form4 inicio = new Form4();
+            inicio.Show();
+            this.Close();
         }
     }
 }

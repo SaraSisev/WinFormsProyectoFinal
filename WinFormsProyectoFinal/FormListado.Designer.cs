@@ -38,7 +38,7 @@
             // 
             // buttonLogoutL
             // 
-            buttonLogoutL.Location = new Point(737, 11);
+            buttonLogoutL.Location = new Point(823, 11);
             buttonLogoutL.Margin = new Padding(2);
             buttonLogoutL.Name = "buttonLogoutL";
             buttonLogoutL.Size = new Size(78, 20);
@@ -50,7 +50,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(771, 298);
+            pictureBox1.Location = new Point(857, 298);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(44, 38);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -64,7 +64,7 @@
             dataGridView1.Location = new Point(12, 36);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(678, 300);
+            dataGridView1.Size = new Size(746, 300);
             dataGridView1.TabIndex = 2;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -72,7 +72,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(827, 348);
+            ClientSize = new Size(919, 348);
             Controls.Add(dataGridView1);
             Controls.Add(pictureBox1);
             Controls.Add(buttonLogoutL);
