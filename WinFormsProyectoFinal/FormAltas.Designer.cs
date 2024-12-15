@@ -93,9 +93,9 @@
             // btnRegresar
             // 
             btnRegresar.Image = (Image)resources.GetObject("btnRegresar.Image");
-            btnRegresar.Location = new Point(503, 305);
+            btnRegresar.Location = new Point(515, 335);
             btnRegresar.Name = "btnRegresar";
-            btnRegresar.Size = new Size(45, 42);
+            btnRegresar.Size = new Size(33, 33);
             btnRegresar.SizeMode = PictureBoxSizeMode.StretchImage;
             btnRegresar.TabIndex = 7;
             btnRegresar.TabStop = false;
@@ -103,6 +103,8 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(261, 54);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(138, 139);
@@ -113,7 +115,7 @@
             // 
             // btnImagen
             // 
-            btnImagen.Location = new Point(295, 199);
+            btnImagen.Location = new Point(276, 199);
             btnImagen.Name = "btnImagen";
             btnImagen.Size = new Size(104, 23);
             btnImagen.TabIndex = 9;

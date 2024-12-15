@@ -16,17 +16,25 @@ namespace WinFormsProyectoFinal
         {
             InitializeComponent();
         }
-        public FormProducto(Image imagen, string descripcion, decimal precio, int existencias)
+        public FormProducto(Image imagen, string nombres,  string descripcion, string precio, string existencias)
         {
             InitializeComponent();
             pictureBoxImagenProd.Image = imagen;
+            lblNombreProd.Text = nombres;
             labelDescripcionProd.Text = descripcion;
-            labelPrecioProd.Text = precio.ToString("N2");
-            labelExistenciasProd.Text = existencias.ToString();
+            labelPrecioProd.Text = precio;
+            labelExistenciasProd.Text = existencias;
+            
         }
         private void FormProducto_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            //Regresar al boton de inicio
+            this.Close();
         }
     }
 }
