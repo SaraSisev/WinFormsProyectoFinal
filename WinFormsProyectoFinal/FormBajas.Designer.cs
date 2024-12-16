@@ -80,7 +80,7 @@
             // 
             // buttonEliminar
             // 
-            buttonEliminar.Location = new Point(25, 294);
+            buttonEliminar.Location = new Point(608, 278);
             buttonEliminar.Margin = new Padding(2);
             buttonEliminar.Name = "buttonEliminar";
             buttonEliminar.Size = new Size(78, 20);
@@ -143,9 +143,11 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(423, 22);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(178, 145);
+            pictureBox1.Size = new Size(164, 145);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
@@ -162,9 +164,9 @@
             // btnRegresar
             // 
             btnRegresar.Image = (Image)resources.GetObject("btnRegresar.Image");
-            btnRegresar.Location = new Point(640, 285);
+            btnRegresar.Location = new Point(12, 297);
             btnRegresar.Name = "btnRegresar";
-            btnRegresar.Size = new Size(46, 40);
+            btnRegresar.Size = new Size(30, 28);
             btnRegresar.SizeMode = PictureBoxSizeMode.StretchImage;
             btnRegresar.TabIndex = 13;
             btnRegresar.TabStop = false;
@@ -187,7 +189,6 @@
             Controls.Add(labelNombre);
             Controls.Add(btnRegresar);
             Controls.Add(labelVenBus);
-            Controls.Add(pictureBox1);
             Controls.Add(boxId);
             Controls.Add(labelDesBus);
             Controls.Add(labelExiBus);
@@ -197,6 +198,7 @@
             Controls.Add(buttonBuscar);
             Controls.Add(labelBajasID);
             Controls.Add(buttonLogoutB);
+            Controls.Add(pictureBox1);
             Margin = new Padding(2);
             Name = "FormBajas";
             Text = "FormBajas";

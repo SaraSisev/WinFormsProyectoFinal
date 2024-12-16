@@ -358,3 +358,6 @@ C:\Users\Eliba\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-wind
 C:\Users\Eliba\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.genruntimeconfig.cache
 C:\Users\Eliba\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\ref\WinFormsProyectoFinal.dll
 C:\Users\Eliba\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormProducto.resources
+C:\Users\lenovo\Source\Repos\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.FormProducto.resources
+C:\Users\lenovo\Source\Repos\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Carrito.resources
+C:\Users\Eliba\WinFormsProyectoFinal\WinFormsProyectoFinal\obj\Debug\net6.0-windows\WinFormsProyectoFinal.Carrito.resources
