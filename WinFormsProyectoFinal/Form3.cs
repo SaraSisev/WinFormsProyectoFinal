@@ -16,12 +16,12 @@ namespace WinFormsProyectoFinal
     {
         //lista de productos
         private List<Productos> productos = new List<Productos>();
-        bool[] band;
+        bool[] band = new bool[10] { false, false, false, false, false, false, false, false, false, false };
 
         public Form3()
         {
             InitializeComponent();
-            band = new bool[10] { false, false, false, false, false, false, false, false, false, false };
+            
 
         }
 
@@ -257,7 +257,7 @@ namespace WinFormsProyectoFinal
                 string nombre = nombreProd;
                 int cantidad = 1;
 
-                productos.Add(new Productos(id, nombre, cantidad));
+                productos.Add(new Productos(indice, id, nombre, cantidad));
                 MessageBox.Show($"Producto agregado: {nombre}, Cantidad: {cantidad}", "Nuevo Producto");
             }
             else
