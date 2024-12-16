@@ -64,19 +64,33 @@ namespace WinFormsProyectoFinal
         {
             try
             {
-                MySqlCommand cmd = new MySqlCommand("delete from productos where id = @id", conn.conexionBD());
-                cmd.Parameters.AddWithValue("@id", boxId.SelectedValue);//num que sera buscado para eliminar
+                Conexion conn = new Conexion();
+                MySqlConnection con = conn.conexionBD();
 
-                int rowsAffected = cmd.ExecuteNonQuery();
-
-                if (rowsAffected > 0)
+                string countRegistros = "select count(*) from productos";
+                MySqlCommand cmdcontar = new MySqlCommand(countRegistros, con);
+                int numRegistros = Convert.ToInt32(cmdcontar.ExecuteScalar());
+                if(numRegistros > 6)
                 {
-                    MessageBox.Show("El registro ha sido eliminado");
+                    MySqlCommand cmd = new MySqlCommand("delete from productos where id = @id", conn.conexionBD());
+                    cmd.Parameters.AddWithValue("@id", boxId.SelectedValue);//num que sera buscado para eliminar
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("El registro ha sido eliminado");
+                    }
+                    else
+                    {
+                        MessageBox.Show("\"El id igresado no existe dentro de la BD");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("\"El id igresado no existe dentro de la BD");
+                    MessageBox.Show("ERROR la base de datos esta en su minimo de productos");
                 }
+               
                
             }
             catch (Exception ex)

@@ -60,22 +60,31 @@ namespace WinFormsProyectoFinal
             try
             {
                 Conexion conn = new Conexion();//variable que nos permite establecer la conexion con la base de datos
-                conn.conexionBD();//llamamos al metodo que conecta a la base de datos
-                MemoryStream ms = new MemoryStream();
-                pictureBox2.Image.Save(ms, pictureBox2.Image.RawFormat);
-                byte[] img = ms.ToArray();
-
-                MySqlCommand cmd1 = new MySqlCommand("insert into productos (id,imagen,nombre,descripcion,precio,existencias,ventas) values (@id, @imagen, @nombre, @descripcion, @precio, @existencias, @ventas)", conn.conexionBD());
-                //Insertamos los valores en el formulario dentro de los campos de la base de datos
-                cmd1.Parameters.AddWithValue("@id", numId.Value);
-                cmd1.Parameters.AddWithValue("@imagen", img);
-                cmd1.Parameters.AddWithValue("@nombre", textBoxNombre.Text);
-                cmd1.Parameters.AddWithValue("@descripcion", richTextBoxAlDes.Text);
-                cmd1.Parameters.AddWithValue("@precio", textBoxAlPre.Text);
-                cmd1.Parameters.AddWithValue("@existencias", numExistencias.Value);
-                cmd1.Parameters.AddWithValue("@ventas", numVentas.Value);
-                cmd1.ExecuteNonQuery();//comando que da entender que no devuelve resultados, osea un conjunto de datos
-                MessageBox.Show("Se han agregado los datos");
+                MySqlConnection con = conn.conexionBD();
+                string countRegistros = "select count(*) from productos ";
+                MySqlCommand cmdContar = new MySqlCommand(countRegistros,con);
+                int numRegistros = Convert.ToInt32(cmdContar.ExecuteScalar());
+                if(numRegistros >= 10)
+                {
+                    MessageBox.Show("ERROR registro de productos superado");
+                }
+                else
+                {
+                    MemoryStream ms = new MemoryStream();
+                    pictureBox2.Image.Save(ms, pictureBox2.Image.RawFormat);
+                    byte[] img = ms.ToArray();
+                    MySqlCommand cmd1 = new MySqlCommand("insert into productos (id,imagen,nombre,descripcion,precio,existencias,ventas) values (@id, @imagen, @nombre, @descripcion, @precio, @existencias, @ventas)", conn.conexionBD());
+                    //Insertamos los valores en el formulario dentro de los campos de la base de datos
+                    cmd1.Parameters.AddWithValue("@id", numId.Value);
+                    cmd1.Parameters.AddWithValue("@imagen", img);
+                    cmd1.Parameters.AddWithValue("@nombre", textBoxNombre.Text);
+                    cmd1.Parameters.AddWithValue("@descripcion", richTextBoxAlDes.Text);
+                    cmd1.Parameters.AddWithValue("@precio", textBoxAlPre.Text);
+                    cmd1.Parameters.AddWithValue("@existencias", numExistencias.Value);
+                    cmd1.Parameters.AddWithValue("@ventas", numVentas.Value);
+                    cmd1.ExecuteNonQuery();//comando que da entender que no devuelve resultados, osea un conjunto de datos
+                    MessageBox.Show("Se han agregado los datos");
+                }
             }
             catch (Exception ex)
             {

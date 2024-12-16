@@ -30,7 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Carrito));
             pictureBox1 = new PictureBox();
-            lblProductos = new Label();
+            lblProducto = new Label();
+            listBox1 = new ListBox();
+            btnEliminar = new Button();
+            btnComprar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -45,21 +48,55 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click_1;
             // 
-            // lblProductos
+            // lblProducto
             // 
-            lblProductos.AutoSize = true;
-            lblProductos.Location = new Point(380, 122);
-            lblProductos.Name = "lblProductos";
-            lblProductos.Size = new Size(38, 15);
-            lblProductos.TabIndex = 1;
-            lblProductos.Text = "label1";
+            lblProducto.AutoSize = true;
+            lblProducto.Location = new Point(495, 51);
+            lblProducto.Name = "lblProducto";
+            lblProducto.Size = new Size(38, 15);
+            lblProducto.TabIndex = 1;
+            lblProducto.Text = "label1";
+            lblProducto.Click += lblProducto_Click;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(105, 32);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(318, 244);
+            listBox1.TabIndex = 2;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            // 
+            // btnEliminar
+            // 
+            btnEliminar.Location = new Point(495, 143);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(75, 23);
+            btnEliminar.TabIndex = 3;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
+            // 
+            // btnComprar
+            // 
+            btnComprar.Location = new Point(105, 300);
+            btnComprar.Name = "btnComprar";
+            btnComprar.Size = new Size(75, 23);
+            btnComprar.TabIndex = 4;
+            btnComprar.Text = "Comprar";
+            btnComprar.UseVisualStyleBackColor = true;
+            btnComprar.Click += btnComprar_Click;
             // 
             // Carrito
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(lblProductos);
+            Controls.Add(btnComprar);
+            Controls.Add(btnEliminar);
+            Controls.Add(listBox1);
+            Controls.Add(lblProducto);
             Controls.Add(pictureBox1);
             Name = "Carrito";
             Text = "Carrito";
@@ -72,6 +109,9 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Label lblProductos;
+        private Label lblProducto;
+        private ListBox listBox1;
+        private Button btnEliminar;
+        private Button btnComprar;
     }
 }
