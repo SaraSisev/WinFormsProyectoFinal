@@ -56,6 +56,16 @@
             pictureBox9 = new PictureBox();
             label9 = new Label();
             pictureBox10 = new PictureBox();
+            agregar1 = new PictureBox();
+            agregar2 = new PictureBox();
+            agregar3 = new PictureBox();
+            agregar4 = new PictureBox();
+            agregar5 = new PictureBox();
+            agregar6 = new PictureBox();
+            agregar7 = new PictureBox();
+            agregar8 = new PictureBox();
+            agregar9 = new PictureBox();
+            agregar10 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)imgProd1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -67,6 +77,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)agregar1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)agregar2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)agregar3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)agregar4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)agregar5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)agregar6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)agregar7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)agregar8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)agregar9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)agregar10).BeginInit();
             SuspendLayout();
             // 
             // buttonlogout
@@ -193,7 +213,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(899, 12);
+            pictureBox4.Location = new Point(889, 12);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(32, 31);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -231,7 +251,7 @@
             // 
             // pictureBox6
             // 
-            pictureBox6.Location = new Point(214, 234);
+            pictureBox6.Location = new Point(35, 234);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(153, 94);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -250,7 +270,7 @@
             // 
             // pictureBox7
             // 
-            pictureBox7.Location = new Point(35, 234);
+            pictureBox7.Location = new Point(214, 234);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(153, 94);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -269,7 +289,7 @@
             // 
             // pictureBox8
             // 
-            pictureBox8.Location = new Point(579, 234);
+            pictureBox8.Location = new Point(400, 234);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(153, 94);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -288,7 +308,7 @@
             // 
             // pictureBox9
             // 
-            pictureBox9.Location = new Point(400, 234);
+            pictureBox9.Location = new Point(579, 234);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(153, 94);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -315,11 +335,131 @@
             pictureBox10.TabStop = false;
             pictureBox10.Click += pictureBox10_Click;
             // 
+            // agregar1
+            // 
+            agregar1.Image = (Image)resources.GetObject("agregar1.Image");
+            agregar1.Location = new Point(15, 72);
+            agregar1.Name = "agregar1";
+            agregar1.Size = new Size(35, 35);
+            agregar1.SizeMode = PictureBoxSizeMode.StretchImage;
+            agregar1.TabIndex = 14;
+            agregar1.TabStop = false;
+            agregar1.Click += agregar1_Click;
+            // 
+            // agregar2
+            // 
+            agregar2.Image = (Image)resources.GetObject("agregar2.Image");
+            agregar2.Location = new Point(200, 72);
+            agregar2.Name = "agregar2";
+            agregar2.Size = new Size(35, 35);
+            agregar2.SizeMode = PictureBoxSizeMode.StretchImage;
+            agregar2.TabIndex = 16;
+            agregar2.TabStop = false;
+            agregar2.Click += agregar2_Click;
+            // 
+            // agregar3
+            // 
+            agregar3.Image = (Image)resources.GetObject("agregar3.Image");
+            agregar3.Location = new Point(384, 72);
+            agregar3.Name = "agregar3";
+            agregar3.Size = new Size(35, 35);
+            agregar3.SizeMode = PictureBoxSizeMode.StretchImage;
+            agregar3.TabIndex = 17;
+            agregar3.TabStop = false;
+            agregar3.Click += agregar3_Click_2;
+            // 
+            // agregar4
+            // 
+            agregar4.Image = (Image)resources.GetObject("agregar4.Image");
+            agregar4.Location = new Point(559, 72);
+            agregar4.Name = "agregar4";
+            agregar4.Size = new Size(35, 35);
+            agregar4.SizeMode = PictureBoxSizeMode.StretchImage;
+            agregar4.TabIndex = 18;
+            agregar4.TabStop = false;
+            agregar4.Click += agregar4_Click_1;
+            // 
+            // agregar5
+            // 
+            agregar5.Image = (Image)resources.GetObject("agregar5.Image");
+            agregar5.Location = new Point(752, 72);
+            agregar5.Name = "agregar5";
+            agregar5.Size = new Size(35, 35);
+            agregar5.SizeMode = PictureBoxSizeMode.StretchImage;
+            agregar5.TabIndex = 19;
+            agregar5.TabStop = false;
+            agregar5.Click += agregar5_Click;
+            // 
+            // agregar6
+            // 
+            agregar6.Image = (Image)resources.GetObject("agregar6.Image");
+            agregar6.Location = new Point(15, 219);
+            agregar6.Name = "agregar6";
+            agregar6.Size = new Size(35, 35);
+            agregar6.SizeMode = PictureBoxSizeMode.StretchImage;
+            agregar6.TabIndex = 20;
+            agregar6.TabStop = false;
+            agregar6.Click += agregar6_Click;
+            // 
+            // agregar7
+            // 
+            agregar7.Image = (Image)resources.GetObject("agregar7.Image");
+            agregar7.Location = new Point(200, 219);
+            agregar7.Name = "agregar7";
+            agregar7.Size = new Size(35, 35);
+            agregar7.SizeMode = PictureBoxSizeMode.StretchImage;
+            agregar7.TabIndex = 21;
+            agregar7.TabStop = false;
+            agregar7.Click += agregar7_Click;
+            // 
+            // agregar8
+            // 
+            agregar8.Image = (Image)resources.GetObject("agregar8.Image");
+            agregar8.Location = new Point(384, 219);
+            agregar8.Name = "agregar8";
+            agregar8.Size = new Size(35, 35);
+            agregar8.SizeMode = PictureBoxSizeMode.StretchImage;
+            agregar8.TabIndex = 22;
+            agregar8.TabStop = false;
+            agregar8.Click += agregar8_Click;
+            // 
+            // agregar9
+            // 
+            agregar9.Image = (Image)resources.GetObject("agregar9.Image");
+            agregar9.Location = new Point(559, 219);
+            agregar9.Name = "agregar9";
+            agregar9.Size = new Size(35, 35);
+            agregar9.SizeMode = PictureBoxSizeMode.StretchImage;
+            agregar9.TabIndex = 23;
+            agregar9.TabStop = false;
+            agregar9.Click += agregar9_Click;
+            // 
+            // agregar10
+            // 
+            agregar10.Image = (Image)resources.GetObject("agregar10.Image");
+            agregar10.Location = new Point(752, 219);
+            agregar10.Name = "agregar10";
+            agregar10.Size = new Size(35, 35);
+            agregar10.SizeMode = PictureBoxSizeMode.StretchImage;
+            agregar10.TabIndex = 24;
+            agregar10.TabStop = false;
+            agregar10.Click += agregar10_Click;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(943, 419);
+            Controls.Add(agregar10);
+            Controls.Add(agregar9);
+            Controls.Add(agregar8);
+            Controls.Add(agregar7);
+            Controls.Add(agregar6);
+            Controls.Add(agregar5);
+            Controls.Add(agregar4);
+            Controls.Add(agregar3);
+            Controls.Add(agregar2);
+            Controls.Add(agregar1);
             Controls.Add(label9);
             Controls.Add(label7);
             Controls.Add(pictureBox10);
@@ -360,6 +500,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)agregar1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)agregar2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)agregar3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)agregar4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)agregar5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)agregar6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)agregar7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)agregar8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)agregar9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)agregar10).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -392,5 +542,15 @@
         private PictureBox pictureBox9;
         private Label label9;
         private PictureBox pictureBox10;
+        private PictureBox agregar1;
+        private PictureBox agregar2;
+        private PictureBox agregar3;
+        private PictureBox agregar4;
+        private PictureBox agregar5;
+        private PictureBox agregar6;
+        private PictureBox agregar7;
+        private PictureBox agregar8;
+        private PictureBox agregar9;
+        private PictureBox agregar10;
     }
 }

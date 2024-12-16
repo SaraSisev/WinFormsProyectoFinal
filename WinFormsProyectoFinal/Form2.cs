@@ -19,6 +19,7 @@ namespace WinFormsProyectoFinal
         {
             InitializeComponent();
         }
+        public static string Nombre { get; set; } = "";//propiedad para almacacenar el nombre del usuario y asi mostrarlo en los forms
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -59,7 +60,8 @@ namespace WinFormsProyectoFinal
                    }
                    else//si la cuenta encontrada es de algun usuario se abre el form 3
                    {
-                        Form3 form3 = new Form3(DatosUsuario.Nombre);
+                        Nombre = DatosUsuario.Nombre;
+                        Form3 form3 = new Form3();
                         form3.Show();
                         this.Hide();
                    }
