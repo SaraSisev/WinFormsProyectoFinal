@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,24 +15,26 @@ namespace WinFormsProyectoFinal
     {
         private List<Productos> productos;
         bool[] banderas;
-        public Carrito(List<Productos> productos, bool[] band)
+        private List<int> existencias;
+        string nombreUsuario;
+
+        public Carrito(List<Productos> productos, bool[] band, List<int> existencias, string nombreUsuario)
         {
             InitializeComponent();
             this.productos = productos;
             this.banderas = band;
-
+            this.existencias = existencias;
+            this.nombreUsuario = nombreUsuario;
             MostrarProductosEnListBox();
         }
 
         private void MostrarProductosEnListBox()
         {
-            // Limpia el ListBox por si tiene elementos previos
+           //Se borra lo que tenia anteriormente para insertar los nuevos datos
             listBox1.Items.Clear();
 
-            // Itera sobre la lista de productos y añade cada elemento
             foreach (var producto in productos)
             {
-                // Si productos tiene una clase personalizada, usa ToString o formatea como prefieras
                 listBox1.Items.Add($"{producto.Id} - {producto.Nombre} - Cantidad: {producto.Cantidad}");
             }
         }
@@ -50,8 +53,8 @@ namespace WinFormsProyectoFinal
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            //Regresar al boton de inicio
-            Form3 inicio = new Form3(productos, banderas);
+            //Regresar al form de inicio
+            Form3 inicio = new Form3(productos, banderas, existencias);
             inicio.Show();
             this.Hide();
         }
@@ -63,30 +66,36 @@ namespace WinFormsProyectoFinal
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            // Verificar que haya un elemento seleccionado
+            //verificar que hay un elemento selecionado
             if (listBox1.SelectedItem != null)
             {
-                // Obtiene el índice del elemento seleccionado en el ListBox
-                int indexSeleccionado = listBox1.SelectedIndex;
+                int indice = listBox1.SelectedIndex; //obtiene el indice del elemento seleccionado del listBox
 
-                // Validar que el índice está dentro del rango de la lista
-                if (indexSeleccionado >= 0 && indexSeleccionado < productos.Count)
+                
+                if ((indice >= 0) && (indice < productos.Count)) //Se verifica que el indice si este en un rango especifico
                 {
-                    banderas[productos[indexSeleccionado].IndiceBand] = false;
-                    // Elimina el producto correspondiente de la lista
-                    productos.RemoveAt(indexSeleccionado);
+                    var productoEliminado = productos[indice]; //Se obtiene el producto a eliminar
 
-                    // Actualiza el ListBox
+                    //Como se va a eliminar las existencias vuelven a su valor de antes de la compra
+                    existencias[productoEliminado.IndiceBand] += productoEliminado.Cantidad; 
+
+                    //Se pone en false el valor de la bandera dl producto 
+                    banderas[productoEliminado.IndiceBand] = false;
+
+                    productos.RemoveAt(indice);//Se elimina de la lista
+
                     MostrarProductosEnListBox();
 
-                    MessageBox.Show("Producto eliminado correctamente.");
+                    MessageBox.Show($"Producto eliminado"); //mnsj de confirmacion
+
+                    //se limpia y deshabilita para eliminar otro producto hasta que se seleccione
                     lblProducto.Text = "";
                     btnEliminar.Enabled = false;
                 }
             }
             else
             {
-                MessageBox.Show("Por favor, selecciona un producto para eliminar.");
+                MessageBox.Show("Selecciona un producto para eliminar.");
             }
         }
 
@@ -103,13 +112,74 @@ namespace WinFormsProyectoFinal
                 var productoSeleccionado = productos[indiceSeleccionado];
 
                 // Muestra la información en el Label
-                lblProducto.Text = $"ID: {productoSeleccionado.Id}\n" +
-                                   $"Nombre: {productoSeleccionado.Nombre}\n" +
-                                   $"Cantidad: {productoSeleccionado.Cantidad}";
+                lblProducto.Text = $"ID: {productoSeleccionado.Id}\n" + $"Nombre: {productoSeleccionado.Nombre}\n" +  $"Cantidad: {productoSeleccionado.Cantidad}";
             }
             else
             {
-                lblProducto.Text = "Seleccione un producto para ver los detalles.";
+                lblProducto.Text = "Seleccione un producto para mostrar los detalles";
+            }
+        }
+
+        private void btnComprar_Click(object sender, EventArgs e)
+        {
+            //Mensaje para confirmar la compra
+            var confirmacion = MessageBox.Show("¿Deseas finalizar la compra?", "Finalizar Compra", MessageBoxButtons.YesNo);
+            if (confirmacion == DialogResult.Yes)
+            {
+                try
+                {
+                    //conexion a la DB
+                    Conexion conection = new Conexion();
+                    MySqlConnection con = conection.conexionBD();
+
+                    foreach (var producto in productos)
+                    {
+                        //parte para actualizar las existencias en la base de datos
+                        string nuevaExi = "UPDATE productos SET existencias = existencias - @cantidad WHERE id = @id";
+                        MySqlCommand cmd = new MySqlCommand(nuevaExi, con);
+                        cmd.Parameters.AddWithValue("@cantidad", producto.Cantidad);
+                        cmd.Parameters.AddWithValue("@id", producto.Id);
+                        cmd.ExecuteNonQuery();
+
+                        //parte del codigo para aumentar la venta del producto
+                        string nuevaVenta = "UPDATE productos SET ventas = ventas + @cantidad WHERE id = @id";
+                        MySqlCommand cmdVentas = new MySqlCommand(nuevaVenta, con);
+                        cmdVentas.Parameters.AddWithValue("@cantidad", producto.Cantidad);
+                        cmdVentas.Parameters.AddWithValue("@id", producto.Id);
+                        cmdVentas.ExecuteNonQuery();
+
+                        //parte para aumentar el monto en la tabla de cuentas del usuario 
+                        string nuevoMonto = "UPDATE cuentas SET monto = monto + @monto WHERE nombre = @nombreUsuario";
+                        MySqlCommand cmdMonto = new MySqlCommand(nuevoMonto, con);
+                        cmdMonto.Parameters.AddWithValue("@monto", producto.Precio);
+                        cmdMonto.Parameters.AddWithValue("@nombreUsuario", nombreUsuario);
+                        cmdMonto.ExecuteNonQuery();
+
+                    }
+
+
+                    //Limpiar las listas usadas y vaciar el carrito
+                    productos.Clear();
+
+                    //En el caso de la lista de banderas se inicializan a false
+                    for (int i = 0; i < banderas.Length; i++)
+                    {
+                        banderas[i] = false; 
+                    }
+
+                    MostrarProductosEnListBox();
+
+                    MessageBox.Show("Compra Exitosa", "Compra Finalizada");
+
+                    //Regresa al form principal
+                    Form3 inicio = new Form3(new List<Productos>(), banderas, existencias);
+                    inicio.Show();
+                    this.Hide();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al realizar la compra: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

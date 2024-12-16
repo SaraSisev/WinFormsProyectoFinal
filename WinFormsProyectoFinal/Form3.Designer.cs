@@ -66,6 +66,16 @@
             agregar8 = new PictureBox();
             agregar9 = new PictureBox();
             agregar10 = new PictureBox();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            label17 = new Label();
+            label18 = new Label();
+            label19 = new Label();
             ((System.ComponentModel.ISupportInitialize)imgProd1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -445,11 +455,111 @@
             agregar10.TabStop = false;
             agregar10.Click += agregar10_Click;
             // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(84, 199);
+            label10.Name = "label10";
+            label10.Size = new Size(40, 15);
+            label10.TabIndex = 25;
+            label10.Text = "Precio";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(267, 199);
+            label11.Name = "label11";
+            label11.Size = new Size(40, 15);
+            label11.TabIndex = 26;
+            label11.Text = "Precio";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(457, 199);
+            label12.Name = "label12";
+            label12.Size = new Size(40, 15);
+            label12.TabIndex = 27;
+            label12.Text = "Precio";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(634, 199);
+            label13.Name = "label13";
+            label13.Size = new Size(40, 15);
+            label13.TabIndex = 28;
+            label13.Text = "Precio";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(828, 199);
+            label14.Name = "label14";
+            label14.Size = new Size(40, 15);
+            label14.TabIndex = 29;
+            label14.Text = "Precio";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(84, 346);
+            label15.Name = "label15";
+            label15.Size = new Size(40, 15);
+            label15.TabIndex = 30;
+            label15.Text = "Precio";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(267, 346);
+            label16.Name = "label16";
+            label16.Size = new Size(40, 15);
+            label16.TabIndex = 31;
+            label16.Text = "Precio";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(457, 346);
+            label17.Name = "label17";
+            label17.Size = new Size(40, 15);
+            label17.TabIndex = 32;
+            label17.Text = "Precio";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(634, 346);
+            label18.Name = "label18";
+            label18.Size = new Size(40, 15);
+            label18.TabIndex = 33;
+            label18.Text = "Precio";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(828, 346);
+            label19.Name = "label19";
+            label19.Size = new Size(40, 15);
+            label19.TabIndex = 34;
+            label19.Text = "Precio";
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(943, 419);
+            Controls.Add(label19);
+            Controls.Add(label18);
+            Controls.Add(label17);
+            Controls.Add(label16);
+            Controls.Add(label15);
+            Controls.Add(label14);
+            Controls.Add(label13);
+            Controls.Add(label12);
+            Controls.Add(label11);
+            Controls.Add(label10);
             Controls.Add(agregar10);
             Controls.Add(agregar9);
             Controls.Add(agregar8);
@@ -552,5 +662,15 @@
         private PictureBox agregar8;
         private PictureBox agregar9;
         private PictureBox agregar10;
+        private Label label10;
+        private Label label11;
+        private Label label12;
+        private Label label13;
+        private Label label14;
+        private Label label15;
+        private Label label16;
+        private Label label17;
+        private Label label18;
+        private Label label19;
     }
 }

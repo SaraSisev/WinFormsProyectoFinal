@@ -14,12 +14,15 @@ namespace WinFormsProyectoFinal
         public string Nombre { get; set; }
         public int Cantidad { get; set; }
 
-        public Productos(int indiceBand, int id, string nombre, int cantidad)
+        public string Precio { get; set; }
+
+        public Productos(int indiceBand, int id, string nombre, int cantidad, string precio)
         {
             IndiceBand = indiceBand;
             Id = id;
             Nombre = nombre;
             Cantidad = cantidad;
+            Precio = precio;
         }
 
         public override string ToString()
