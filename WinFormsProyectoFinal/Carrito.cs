@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Printing;
 
 namespace WinFormsProyectoFinal
 {
@@ -30,7 +31,7 @@ namespace WinFormsProyectoFinal
 
         private void MostrarProductosEnListBox()
         {
-           //Se borra lo que tenia anteriormente para insertar los nuevos datos
+            //Se borra lo que tenia anteriormente para insertar los nuevos datos
             listBox1.Items.Clear();
 
             foreach (var producto in productos)
@@ -71,13 +72,13 @@ namespace WinFormsProyectoFinal
             {
                 int indice = listBox1.SelectedIndex; //obtiene el indice del elemento seleccionado del listBox
 
-                
+
                 if ((indice >= 0) && (indice < productos.Count)) //Se verifica que el indice si este en un rango especifico
                 {
                     var productoEliminado = productos[indice]; //Se obtiene el producto a eliminar
 
                     //Como se va a eliminar las existencias vuelven a su valor de antes de la compra
-                    existencias[productoEliminado.IndiceBand] += productoEliminado.Cantidad; 
+                    existencias[productoEliminado.IndiceBand] += productoEliminado.Cantidad;
 
                     //Se pone en false el valor de la bandera dl producto 
                     banderas[productoEliminado.IndiceBand] = false;
@@ -112,7 +113,7 @@ namespace WinFormsProyectoFinal
                 var productoSeleccionado = productos[indiceSeleccionado];
 
                 // Muestra la información en el Label
-                lblProducto.Text = $"ID: {productoSeleccionado.Id}\n" + $"Nombre: {productoSeleccionado.Nombre}\n" +  $"Cantidad: {productoSeleccionado.Cantidad}";
+                lblProducto.Text = $"ID: {productoSeleccionado.Id}\n" + $"Nombre: {productoSeleccionado.Nombre}\n" + $"Cantidad: {productoSeleccionado.Cantidad}";
             }
             else
             {
@@ -128,6 +129,16 @@ namespace WinFormsProyectoFinal
             {
                 try
                 {
+                    printDocument1 = new PrintDocument();
+                    PrinterSettings ps = new PrinterSettings();
+                    printDocument1.PrinterSettings = ps;
+                    printDocument1.PrintPage += Imprimir;
+                    printDocument1.Print();
+
+                    double totalSinImpuesto = 0;
+                    double totalConImpuesto = 0;
+                    double impuesto = 0;
+
                     //conexion a la DB
                     Conexion conection = new Conexion();
                     MySqlConnection con = conection.conexionBD();
@@ -148,15 +159,25 @@ namespace WinFormsProyectoFinal
                         cmdVentas.Parameters.AddWithValue("@id", producto.Id);
                         cmdVentas.ExecuteNonQuery();
 
-                        //parte para aumentar el monto en la tabla de cuentas del usuario 
-                        string nuevoMonto = "UPDATE cuentas SET monto = monto + @monto WHERE nombre = @nombreUsuario";
-                        MySqlCommand cmdMonto = new MySqlCommand(nuevoMonto, con);
-                        cmdMonto.Parameters.AddWithValue("@monto", producto.Precio);
-                        cmdMonto.Parameters.AddWithValue("@nombreUsuario", nombreUsuario);
-                        cmdMonto.ExecuteNonQuery();
+                        double precio;
+                        double.TryParse(producto.Precio, out precio);
+
+                        // Calcular total sin impuesto
+                        totalSinImpuesto += producto.Cantidad * precio;
+
 
                     }
 
+                    // Calcular impuesto y total con impuesto
+                    impuesto = totalSinImpuesto * 0.06; // 6% de impuesto
+                    totalConImpuesto = totalSinImpuesto + impuesto;
+
+                    //parte para aumentar el monto en la tabla de cuentas del usuario 
+                    string nuevoMonto = "UPDATE cuentas SET monto = monto + @monto WHERE nombre = @nombreUsuario";
+                    MySqlCommand cmdMonto = new MySqlCommand(nuevoMonto, con);
+                    cmdMonto.Parameters.AddWithValue("@monto", totalConImpuesto);
+                    cmdMonto.Parameters.AddWithValue("@nombreUsuario", nombreUsuario);
+                    cmdMonto.ExecuteNonQuery();
 
                     //Limpiar las listas usadas y vaciar el carrito
                     productos.Clear();
@@ -164,7 +185,7 @@ namespace WinFormsProyectoFinal
                     //En el caso de la lista de banderas se inicializan a false
                     for (int i = 0; i < banderas.Length; i++)
                     {
-                        banderas[i] = false; 
+                        banderas[i] = false;
                     }
 
                     MostrarProductosEnListBox();
@@ -182,5 +203,106 @@ namespace WinFormsProyectoFinal
                 }
             }
         }
+
+
+        private void Imprimir(object sender, PrintPageEventArgs e)
+        {
+            // Fuentes y colores
+            Font fontTitulo = new Font("Verdana", 16, FontStyle.Bold);
+            Font fontSubtitulo = new Font("Maiandra GD", 12, FontStyle.Italic);
+            Font fontTexto = new Font("Nirmala UI", 12);
+            Brush brush = Brushes.Black;
+
+            int espacioHorizontal = 20; // Espacio entre el logo y el texto
+
+            // Configuración de posicionamiento
+            int anchoPagina = e.PageBounds.Width;
+            int y = 20; // Posición vertical inicial
+
+            // Configuración de posición y tamaño
+            int x = 20; // Posición X inicial
+            int anchoImagen = 120; // Ancho del logo (más grande)
+            int altoImagen = 120;  // Alto del logo (más grande)
+
+            // --- DIBUJAR EL LOGO ---
+            if (pictureBox2.Image != null)
+            {
+                e.Graphics.DrawImage(pictureBox2.Image, new Rectangle(x, y, anchoImagen, altoImagen));
+            }
+
+            // --- DIBUJAR EL TÍTULO Y EL SLOGAN ---
+            int xTexto = x + anchoImagen + espacioHorizontal; // Posición X del texto, a la derecha del logo
+            int yTexto = y; // Alinear con la parte superior
+
+            e.Graphics.DrawString("Tricotera", fontTitulo, brush, new PointF(xTexto, yTexto + 40));
+            e.Graphics.DrawString("Tejiendo sueños, un punto a la vez", fontSubtitulo, brush, new PointF(xTexto, yTexto + 70));
+
+            // Ajustar la posición después del logo
+            y += altoImagen + 20;
+
+            // Fecha y hora actuales
+            string fechaHora = DateTime.Now.ToString("dd/MM/yyyy hh:mm tt");
+            e.Graphics.DrawString($"Fecha: {fechaHora}", fontTexto, brush, new PointF(20, y));
+            y += 30;
+
+
+            // Información del cliente
+            e.Graphics.DrawString($"Cliente: {nombreUsuario}", fontTexto, brush, new PointF(20, y));
+            y += 30;
+
+            // Columnas de la tabla
+            e.Graphics.DrawString("Producto", fontTexto, brush, new PointF(20, y));
+            e.Graphics.DrawString("Cantidad", fontTexto, brush, new PointF(200, y));
+            e.Graphics.DrawString("Precio", fontTexto, brush, new PointF(350, y));
+            y += 30;
+
+            // Línea separadora
+            e.Graphics.DrawLine(Pens.Black, 20, y, anchoPagina - 20, y);
+            y += 10;
+
+            // Variables para totales
+            double totalSinImpuesto = 0;
+            double totalConImpuesto = 0;
+            double impuesto = 0;
+
+            // Iterar sobre los productos
+            foreach (var producto in productos)
+            {
+                // Convertir el precio a double
+                double precio;
+                double.TryParse(producto.Precio, out precio);
+
+
+                // Imprimir datos del producto
+                e.Graphics.DrawString(producto.Nombre, fontTexto, brush, new PointF(20, y));
+                e.Graphics.DrawString(producto.Cantidad.ToString(), fontTexto, brush, new PointF(200, y));
+                e.Graphics.DrawString($"${precio:F2}", fontTexto, brush, new PointF(350, y));
+
+                // Calcular total sin impuesto
+                totalSinImpuesto += producto.Cantidad * precio;
+
+                y += 30; // Espacio para la siguiente línea
+            }
+
+            // Calcular impuesto y total con impuesto
+            impuesto = totalSinImpuesto * 0.06; // 6% de impuesto
+            totalConImpuesto = totalSinImpuesto + impuesto;
+
+            // Línea separadora final
+            e.Graphics.DrawLine(Pens.Black, 20, y, anchoPagina - 20, y);
+            y += 10;
+
+            // Imprimir totales
+            e.Graphics.DrawString($"Total sin impuesto: ${totalSinImpuesto:F2}", fontSubtitulo, brush, new PointF(20, y));
+            y += 30;
+            e.Graphics.DrawString($"Impuesto (6%): ${impuesto:F2}", fontSubtitulo, brush, new PointF(20, y));
+            y += 30;
+            e.Graphics.DrawString($"Total con impuesto: ${totalConImpuesto:F2}", fontTitulo, brush, new PointF(20, y));
+            y += 40;
+        }
+
+
+
+
     }
 }

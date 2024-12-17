@@ -34,7 +34,10 @@
             listBox1 = new ListBox();
             btnEliminar = new Button();
             btnComprar = new Button();
+            printDocument1 = new System.Drawing.Printing.PrintDocument();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -88,11 +91,26 @@
             btnComprar.UseVisualStyleBackColor = true;
             btnComprar.Click += btnComprar_Click;
             // 
+            // printDocument1
+            // 
+            printDocument1.PrintPage += Imprimir;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(687, 12);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(101, 97);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 5;
+            pictureBox2.TabStop = false;
+            // 
             // Carrito
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox2);
             Controls.Add(btnComprar);
             Controls.Add(btnEliminar);
             Controls.Add(listBox1);
@@ -102,6 +120,7 @@
             Text = "Carrito";
             Load += Carrito_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -113,5 +132,7 @@
         private ListBox listBox1;
         private Button btnEliminar;
         private Button btnComprar;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private PictureBox pictureBox2;
     }
 }

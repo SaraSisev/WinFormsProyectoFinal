@@ -54,6 +54,7 @@
             formsPlot1.Name = "formsPlot1";
             formsPlot1.Size = new Size(426, 247);
             formsPlot1.TabIndex = 1;
+            formsPlot1.Load += formsPlot1_Load;
             // 
             // btnRegresar
             // 
