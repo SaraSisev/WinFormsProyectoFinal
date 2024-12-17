@@ -30,14 +30,19 @@
         {
             buttonLogoutC = new Button();
             labelVentasTotales = new Label();
+            dataGridViewProductosOrdenados = new DataGridView();
+            labelProductosMasVendi = new Label();
+            labelMejoresClientes = new Label();
+            dataGridViewMejoresCli = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewProductosOrdenados).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewMejoresCli).BeginInit();
             SuspendLayout();
             // 
             // buttonLogoutC
             // 
-            buttonLogoutC.Location = new Point(471, 11);
-            buttonLogoutC.Margin = new Padding(2, 2, 2, 2);
+            buttonLogoutC.Location = new Point(654, 405);
             buttonLogoutC.Name = "buttonLogoutC";
-            buttonLogoutC.Size = new Size(78, 20);
+            buttonLogoutC.Size = new Size(111, 33);
             buttonLogoutC.TabIndex = 0;
             buttonLogoutC.Text = "LogOut";
             buttonLogoutC.UseVisualStyleBackColor = true;
@@ -46,24 +51,66 @@
             // labelVentasTotales
             // 
             labelVentasTotales.AutoSize = true;
-            labelVentasTotales.Location = new Point(70, 73);
-            labelVentasTotales.Margin = new Padding(2, 0, 2, 0);
+            labelVentasTotales.Location = new Point(210, 9);
             labelVentasTotales.Name = "labelVentasTotales";
-            labelVentasTotales.Size = new Size(38, 15);
+            labelVentasTotales.Size = new Size(59, 25);
             labelVentasTotales.TabIndex = 1;
             labelVentasTotales.Text = "label1";
             // 
+            // dataGridViewProductosOrdenados
+            // 
+            dataGridViewProductosOrdenados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewProductosOrdenados.Location = new Point(33, 121);
+            dataGridViewProductosOrdenados.Name = "dataGridViewProductosOrdenados";
+            dataGridViewProductosOrdenados.RowHeadersWidth = 62;
+            dataGridViewProductosOrdenados.RowTemplate.Height = 33;
+            dataGridViewProductosOrdenados.Size = new Size(360, 225);
+            dataGridViewProductosOrdenados.TabIndex = 2;
+            // 
+            // labelProductosMasVendi
+            // 
+            labelProductosMasVendi.AutoSize = true;
+            labelProductosMasVendi.Location = new Point(33, 77);
+            labelProductosMasVendi.Name = "labelProductosMasVendi";
+            labelProductosMasVendi.Size = new Size(275, 25);
+            labelProductosMasVendi.TabIndex = 3;
+            labelProductosMasVendi.Text = "Lista de productos mas vendidos";
+            // 
+            // labelMejoresClientes
+            // 
+            labelMejoresClientes.AutoSize = true;
+            labelMejoresClientes.Location = new Point(470, 77);
+            labelMejoresClientes.Name = "labelMejoresClientes";
+            labelMejoresClientes.Size = new Size(141, 25);
+            labelMejoresClientes.TabIndex = 4;
+            labelMejoresClientes.Text = "Mejores Clientes";
+            // 
+            // dataGridViewMejoresCli
+            // 
+            dataGridViewMejoresCli.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewMejoresCli.Location = new Point(428, 121);
+            dataGridViewMejoresCli.Name = "dataGridViewMejoresCli";
+            dataGridViewMejoresCli.RowHeadersWidth = 62;
+            dataGridViewMejoresCli.RowTemplate.Height = 33;
+            dataGridViewMejoresCli.Size = new Size(360, 225);
+            dataGridViewMejoresCli.TabIndex = 5;
+            // 
             // FormConsultas
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(560, 270);
+            ClientSize = new Size(800, 450);
+            Controls.Add(dataGridViewMejoresCli);
+            Controls.Add(labelMejoresClientes);
+            Controls.Add(labelProductosMasVendi);
+            Controls.Add(dataGridViewProductosOrdenados);
             Controls.Add(labelVentasTotales);
             Controls.Add(buttonLogoutC);
-            Margin = new Padding(2, 2, 2, 2);
             Name = "FormConsultas";
             Text = "FormConsultas";
             Load += FormConsultas_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridViewProductosOrdenados).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewMejoresCli).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -72,5 +119,9 @@
 
         private Button buttonLogoutC;
         private Label labelVentasTotales;
+        private DataGridView dataGridViewProductosOrdenados;
+        private Label labelProductosMasVendi;
+        private Label labelMejoresClientes;
+        private DataGridView dataGridViewMejoresCli;
     }
 }

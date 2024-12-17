@@ -17,12 +17,12 @@ namespace WinFormsProyectoFinal
 {
     public partial class FormGrafica : Form
     {
-        
+
 
         public FormGrafica()
         {
-            
-            
+
+
             List<string> nombres = new List<string>(); //Vector para almacenar los nombres
             List<int> ventas = new List<int>();  //Vector para almacenar las ventas
             InitializeComponent();
@@ -49,7 +49,7 @@ namespace WinFormsProyectoFinal
                             // Agregar ventas a la lista
                             ventas.Add(Convert.ToInt32(reader["ventas"]));
                         }
-                        
+
                     }
                 }
 
@@ -83,13 +83,14 @@ namespace WinFormsProyectoFinal
                     bar.LineWidth = 2;
                     bar.LineColor = bar.FillColor.Darken(0.5);
                     bar.FillHatchColor = bar.FillColor.Lighten(0.1);
+                   
                 }
 
                 //configurar ticks personalizados
                 formsPlot1.Plot.Axes.Bottom.TickGenerator = new ScottPlot.TickGenerators.NumericManual(ticks);
                 formsPlot1.Plot.Axes.Bottom.MajorTickStyle.Length = 0; //sin marcas grandes en el eje X
 
-                
+
                 formsPlot1.Plot.HideGrid(); //ocultar la cuadrícula
 
 
@@ -115,6 +116,11 @@ namespace WinFormsProyectoFinal
             Form4 inicio = new Form4();
             inicio.Show();
             this.Close();
+        }
+
+        private void formsPlot1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

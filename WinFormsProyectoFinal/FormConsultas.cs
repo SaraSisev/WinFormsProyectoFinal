@@ -28,6 +28,8 @@ namespace WinFormsProyectoFinal
         private void FormConsultas_Load(object sender, EventArgs e)
         {
             ventasTotales();
+            productosMasVendidos();
+            mejoresClientes();
         }
         private void ventasTotales()
         {
@@ -50,6 +52,44 @@ namespace WinFormsProyectoFinal
                 {
                     labelVentasTotales.Text = "Ventas Totales: $0.00";
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            
+        }
+        private void productosMasVendidos()
+        {
+            try
+            {
+                Conexion con = new Conexion();
+                MySqlConnection conn = con.conexionBD();
+                string consultaProductos = "select nombre, ventas from productos ORDER BY ventas DESC";
+                MySqlCommand cmd = new MySqlCommand(consultaProductos, conn);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                DataTable tabla = new DataTable();
+                adapter.Fill(tabla);
+                dataGridViewProductosOrdenados.DataSource = tabla;
+                
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+        private void mejoresClientes()
+        {
+            try
+            {
+                Conexion con = new Conexion();
+                MySqlConnection conn = con.conexionBD();
+                string consultaCuentas = "select nombre, monto from cuentas where nombre <> 'admin' ORDER BY monto DESC";
+                MySqlCommand cmd = new MySqlCommand(consultaCuentas, conn);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                DataTable tabla = new DataTable();
+                adapter.Fill(tabla);
+                dataGridViewMejoresCli.DataSource = tabla;
             }
             catch (Exception ex)
             {

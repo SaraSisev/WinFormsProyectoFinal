@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\eliba\\winformsproyectofinal\\winformsproyectofinal\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\eliba\\winformsproyectofinal\\winformsproyectofinal\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|C:\\Users\\Eliba\\WinFormsProyectoFinal\\winformsproyectofinal\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|C:\\Users\\Eliba\\WinFormsProyectoFinal\\winformsproyectofinal\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\eliba\\winformsproyectofinal\\winformsproyectofinal\\formconsultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formconsultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\eliba\\winformsproyectofinal\\winformsproyectofinal\\formconsultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formconsultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|C:\\Users\\Eliba\\WinFormsProyectoFinal\\winformsproyectofinal\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\eliba\\winformsproyectofinal\\winformsproyectofinal\\formlistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formlistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,19 +39,7 @@
       "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formbajas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|C:\\Users\\Eliba\\WinFormsProyectoFinal\\winformsproyectofinal\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\eliba\\winformsproyectofinal\\winformsproyectofinal\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\eliba\\winformsproyectofinal\\winformsproyectofinal\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\eliba\\winformsproyectofinal\\winformsproyectofinal\\formaltas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|C:\\Users\\Eliba\\WinFormsProyectoFinal\\winformsproyectofinal\\formaltas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formaltas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -31,7 +47,7 @@
       "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formaltas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\eliba\\winformsproyectofinal\\winformsproyectofinal\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|C:\\Users\\Eliba\\WinFormsProyectoFinal\\winformsproyectofinal\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -63,10 +79,6 @@
       "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formbajas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|C:\\Users\\Eliba\\WinFormsProyectoFinal\\winformsproyectofinal\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|C:\\Users\\Eliba\\WinFormsProyectoFinal\\winformsproyectofinal\\formlistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\formlistado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -78,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,7 +102,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
+              "Title": "FormConsultas.cs",
+              "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormConsultas.cs",
+              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormConsultas.cs",
+              "ToolTip": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormConsultas.cs",
+              "RelativeToolTip": "WinFormsProyectoFinal\\FormConsultas.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAwFoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T04:52:15.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormConsultas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormConsultas.cs",
+              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormConsultas.cs",
+              "ToolTip": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormConsultas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WinFormsProyectoFinal\\FormConsultas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T04:52:12.581Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Carrito.cs",
+              "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Carrito.cs",
+              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Carrito.cs",
+              "ToolTip": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Carrito.cs",
+              "RelativeToolTip": "WinFormsProyectoFinal\\Carrito.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAIwCgBAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T04:42:52.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "FormAltas.cs",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormAltas.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormAltas.cs",
@@ -103,19 +153,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "FormAltas.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormAltas.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormAltas.cs",
               "ToolTip": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormAltas.cs [Dise\u00F1o]",
               "RelativeToolTip": "WinFormsProyectoFinal\\FormAltas.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T16:04:29.5Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-12-16T16:04:29.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Carrito.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Carrito.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Carrito.cs",
@@ -127,13 +176,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form2.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Form2.cs",
               "ToolTip": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form2.cs",
               "RelativeToolTip": "WinFormsProyectoFinal\\Form2.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAWwDkAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAASwFcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T03:27:10.335Z",
               "EditorCaption": ""
@@ -152,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "DatosUsuario.cs",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\DatosUsuario.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\DatosUsuario.cs",
@@ -164,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "FormProducto.cs",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormProducto.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormProducto.cs",
@@ -177,19 +226,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "FormProducto.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormProducto.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormProducto.cs",
               "ToolTip": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormProducto.cs [Dise\u00F1o]",
               "RelativeToolTip": "WinFormsProyectoFinal\\FormProducto.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T06:44:31.979Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-12-15T06:44:31.979Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Form3.cs",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form3.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Form3.cs",
@@ -202,19 +250,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Form3.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form3.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Form3.cs",
               "ToolTip": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form3.cs [Dise\u00F1o]",
               "RelativeToolTip": "WinFormsProyectoFinal\\Form3.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T06:41:16.944Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-12-15T06:41:16.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "FormBajas.cs",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormBajas.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormBajas.cs",
@@ -227,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "FormBajas.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormBajas.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormBajas.cs",
@@ -238,31 +285,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "FormListado.cs",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormListado.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormListado.cs",
               "ToolTip": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormListado.cs",
               "RelativeToolTip": "WinFormsProyectoFinal\\FormListado.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAEwCEAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-15T01:02:13.094Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 6,
               "Title": "Form4.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form4.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Form4.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form4.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form4.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form4.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WinFormsProyectoFinal\\Form4.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T00:38:52.577Z"
+              "WhenOpened": "2024-12-15T00:38:52.577Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "FormGrafica.cs",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormGrafica.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormGrafica.cs",
@@ -275,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "FormGrafica.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormGrafica.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormGrafica.cs",
@@ -286,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "FormListado.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Eliba\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\FormListado.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\FormListado.cs",

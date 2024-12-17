@@ -19,7 +19,7 @@ namespace WinFormsProyectoFinal
         {
             InitializeComponent();
         }
-        public FormProducto(Image imagen, string nombres, string descripcion, string precio, string existencias,string NombreUsuario)
+        public FormProducto(Image imagen, string nombres, string descripcion, string precio, string existencias, string NombreUsuario)
         {
             InitializeComponent();
             pictureBoxImagenProd.Image = imagen;
@@ -28,7 +28,7 @@ namespace WinFormsProyectoFinal
             labelPrecioProd.Text = precio;
             labelExistenciasProd.Text = existencias;
             this.nombreUsuario = NombreUsuario;
-
+            labelNombreUsu.Text = nombreUsuario;
         }
         private void FormProducto_Load(object sender, EventArgs e)
         {
@@ -80,6 +80,11 @@ namespace WinFormsProyectoFinal
             {
                 MessageBox.Show("Producto agotado");
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToShortDateString();
         }
     }
 }
