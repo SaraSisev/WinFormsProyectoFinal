@@ -8,15 +8,25 @@ namespace WinFormsProyectoFinal
         public Form1()
         {
             InitializeComponent();
-            //PlayMusic("musicaProyecto.mp3");
+            //Reproduce música de club penguin c:
+            PlayMusic("musicaProyecto.wav");
         }
 
-            /*public static void PlayMusic(string path)
+        public static void PlayMusic(string path)
         {
-            SoundPlayer player = new SoundPlayer();
-            player.SoundLocation = path;
-            player.Play();
-        }*/
+            SoundPlayer player;
+            //Se usa un try catch para reproducir la musica por si no se encunetra en los archivos
+            try
+            {
+                player = new SoundPlayer(path);
+                player.PlayLooping(); //Se reproduce la musica en un bucle
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al reproducir el archivo: " + ex.Message);
+            }
+
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -28,6 +38,16 @@ namespace WinFormsProyectoFinal
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblFecha_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToLongDateString();
         }
     }
 }

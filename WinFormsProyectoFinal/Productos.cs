@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace WinFormsProyectoFinal
 {
-
+    //Clase que maneja los productos que el comprador quiere comprar, para no modificar lso datos de la base de datos hasta que 
+    //el comprador confirme su compra
     public class Productos
     {
         public int IndiceBand { get; set; }

@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\lenovo\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\lenovo\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\winformsproyectofinal\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\lenovo\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\lenovo\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\lenovo\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\lenovo\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|c:\\users\\lenovo\\source\\repos\\winformsproyectofinal\\winformsproyectofinal\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B17E6CA-FC5F-43A8-9D5E-0854517F271B}|WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj|solutionrelative:winformsproyectofinal\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,64 +71,76 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form1.cs",
-              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Form1.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form1.cs*",
-              "RelativeToolTip": "WinFormsProyectoFinal\\Form1.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAALAAAAAAAAAA==",
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form2.cs",
+              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Form2.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form2.cs",
+              "RelativeToolTip": "WinFormsProyectoFinal\\Form2.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAswDwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:42:15.873Z",
+              "WhenOpened": "2024-12-17T04:31:06.677Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form1.cs",
-              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Form1.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form1.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "WinFormsProyectoFinal\\Form1.cs [Dise\u00F1o]*",
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form2.cs",
+              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Form2.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WinFormsProyectoFinal\\Form2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:38:47.439Z",
+              "WhenOpened": "2024-12-16T03:27:06.27Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Productos.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Productos.cs",
-              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Productos.cs",
-              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Productos.cs",
-              "RelativeToolTip": "WinFormsProyectoFinal\\Productos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T00:54:21.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Carrito.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Carrito.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Carrito.cs",
               "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Carrito.cs",
               "RelativeToolTip": "WinFormsProyectoFinal\\Carrito.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAAAUwK8AAABMAAAAAAAAAA==",
+              "ViewState": "AgIAACIBAAAAAAAAAAAiwC8BAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T22:54:29.952Z",
+              "WhenOpened": "2024-12-17T04:24:55.105Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Carrito.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Carrito.cs",
               "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Carrito.cs",
               "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Carrito.cs [Dise\u00F1o]",
               "RelativeToolTip": "WinFormsProyectoFinal\\Carrito.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T22:54:07.139Z",
+              "WhenOpened": "2024-12-17T04:24:51.729Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form1.cs",
+              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Form1.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form1.cs",
+              "RelativeToolTip": "WinFormsProyectoFinal\\Form1.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAwwDEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T04:24:34.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form1.cs",
+              "RelativeDocumentMoniker": "WinFormsProyectoFinal\\Form1.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WinFormsProyectoFinal\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T04:21:27.845Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

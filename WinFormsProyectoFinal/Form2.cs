@@ -46,6 +46,7 @@ namespace WinFormsProyectoFinal
                     {
                         cuentaValida = true;//indica que la cuenta si existe ya que se encontro
                         DatosUsuario.Nombre = reader["nombre"].ToString();//almacenar el nombre del usuario que accedio para asi mostrarlo en otros forms
+                        MessageBox.Show(" Bienvenid@ " + DatosUsuario.Nombre);
                         break;//salir de bucle cuando se encuentra la cuenta deseada
                     }
                 }
@@ -57,8 +58,9 @@ namespace WinFormsProyectoFinal
                         Form4 form4 = new Form4();
                         form4.Show();
                         this.Hide();
-                   }
-                   else//si la cuenta encontrada es de algun usuario se abre el form 3
+                        
+                    }
+                    else//si la cuenta encontrada es de algun usuario se abre el form 3
                    {
                         Nombre = DatosUsuario.Nombre;
                         Form3 form3 = new Form3(Nombre);
