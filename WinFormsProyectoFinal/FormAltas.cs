@@ -84,6 +84,11 @@ namespace WinFormsProyectoFinal
                     cmd1.Parameters.AddWithValue("@ventas", numVentas.Value);
                     cmd1.ExecuteNonQuery();//comando que da entender que no devuelve resultados, osea un conjunto de datos
                     MessageBox.Show("Se han agregado los datos");
+
+                    //Regresar al boton de inicio
+                    Form4 inicio = new Form4();
+                    inicio.Show();
+                    this.Close();
                 }
             }
             catch (Exception ex)

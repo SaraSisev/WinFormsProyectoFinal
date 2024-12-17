@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Printing;
+using Google.Protobuf.WellKnownTypes;
 
 namespace WinFormsProyectoFinal
 {
@@ -30,19 +31,10 @@ namespace WinFormsProyectoFinal
             this.existencias = existencias;
             this.nombreUsuario = nombreUsuario;
             lblNombre.Text = nombreUsuario;
-            MostrarProductosEnListBox(); //Se muestran los productos en el listBox
+            MostrarProductos();//Se muestran los productos en el listView
+            btnEliminar.Enabled = false;
         }
 
-        private void MostrarProductosEnListBox()
-        {
-            //Se borra lo que tenia anteriormente para insertar los nuevos datos
-            listBox1.Items.Clear();
-
-            foreach (var producto in productos)
-            {
-                listBox1.Items.Add($"{producto.Id} - {producto.Nombre} - Cantidad: {producto.Cantidad}");
-            }
-        }
 
 
 
@@ -72,9 +64,9 @@ namespace WinFormsProyectoFinal
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             //verificar que hay un elemento selecionado
-            if (listBox1.SelectedItem != null)
+            if (listView1.SelectedItems.Count > 0)
             {
-                int indice = listBox1.SelectedIndex; //obtiene el indice del elemento seleccionado del listBox
+                int indice = listView1.SelectedIndices[0]; //obtiene el indice del elemento seleccionado del ListView
 
                 if ((indice >= 0) && (indice < productos.Count)) //Se verifica que el indice si este en un rango especifico
                 {
@@ -88,7 +80,7 @@ namespace WinFormsProyectoFinal
 
                     productos.RemoveAt(indice);//Se elimina de la lista
 
-                    MostrarProductosEnListBox();//Se actualizan otra vez los datos del listBox
+                    MostrarProductos();//Se actualizan otra vez los datos del ListView
 
                     MessageBox.Show($"Producto eliminado");//Mensaje de confirmacion
 
@@ -99,35 +91,20 @@ namespace WinFormsProyectoFinal
             }
             else
             {
-                MessageBox.Show("Selecciona un producto para eliminar.");
+                MessageBox.Show("Selecciona un producto para eliminar");
             }
+
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            btnEliminar.Enabled = true; //Se habilita el boton cuando se selecciona un elemento del listBox
-
-            //Se obtiene el indice del producto seleccionado
-            int indice = listBox1.SelectedIndex;
-
-            //Se valida si si hay un elemento 
-            if (indice >= 0 && indice < productos.Count)
-            {
-                //Se obtiene el producto del indice seleccionado y lo muestra en un label
-                var producto = productos[indice];
-
-                lblProducto.Text = $"ID: {producto.Id}\n" + $"Nombre: {producto.Nombre}\n" + $"Cantidad: {producto.Cantidad}" + $"Precio: {producto.Precio}";
-            }
-            else
-            {
-                lblProducto.Text = "Seleccione un producto para mostrar los detalles";
-            }
+            
         }
 
         private void btnComprar_Click(object sender, EventArgs e)
         {
             //Mensaje para confirmar la compra
-            var confirmacion = MessageBox.Show("¿Deseas finalizar la compra?", "Finalizar Compra", MessageBoxButtons.YesNo);
+            var confirmacion = MessageBox.Show("¿Deseas finalizar la compra?", "Finalizar Compra", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (confirmacion == DialogResult.Yes)
             {
                 try
@@ -190,7 +167,7 @@ namespace WinFormsProyectoFinal
                         banderas[i] = false;
                     }
 
-                    MostrarProductosEnListBox();
+                    MostrarProductos();
 
                     MessageBox.Show("Compra Exitosa", "Compra Finalizada"); //Se muestra un mensaje de que se realizó la compra correctamente
 
@@ -302,6 +279,82 @@ namespace WinFormsProyectoFinal
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblFecha.Text = DateTime.Now.ToShortDateString(); //Se muestra le fecha
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btnEliminar.Enabled = true;
+
+            if (listView1.SelectedItems.Count > 0)
+            {
+                int indice = listView1.SelectedIndices[0];
+                if (indice >= 0 && indice < productos.Count)
+                {
+                    var producto = productos[indice];
+                    lblProducto.Text = $"ID: {producto.Id}\n" +
+                                       $"Nombre: {producto.Nombre}\n" +
+                                       $"Cantidad: {producto.Cantidad}\n" +
+                                       $"Precio: {producto.Precio}";
+                }
+            }
+            else
+            {
+                lblProducto.Text = "Seleccione un producto para mostrar los detalles";
+            }
+        }
+
+        private void MostrarProductos()
+        {
+            //Se borra lo que tenia anteriormente para insertar los nuevos datos
+            listView1.Items.Clear();
+
+            //Se configuran las columnas
+            if (listView1.Columns.Count == 0)
+            {
+                listView1.View = View.Details;
+                listView1.Columns.Add("Nombre", 140, HorizontalAlignment.Left);
+                listView1.Columns.Add("Cantidad", 70, HorizontalAlignment.Center);               
+                listView1.Columns.Add("Precio", 100, HorizontalAlignment.Center);
+                listView1.Columns.Add("Total", 100, HorizontalAlignment.Center);
+            }
+
+            //Variables que se usan para actualizar el monto del usuario
+            double tot = 0;
+            double totFinal = 0;
+            double impuesto = 0;
+
+            foreach (var producto in productos)
+            {
+                double precio;
+                double.TryParse(producto.Precio, out precio);
+                double totalProducto = producto.Cantidad * precio;
+
+                //Se crea un ítem para mostrar los productos
+                var item = new ListViewItem(producto.Nombre);
+                item.SubItems.Add(producto.Cantidad.ToString());
+                item.SubItems.Add($"${precio:F2}");
+                item.SubItems.Add($"${totalProducto:F2}");
+                listView1.Items.Add(item);
+
+                tot += totalProducto;
+            }
+
+            //Se calcula el impuesto y el total final
+            impuesto = tot * 0.06;
+            totFinal = tot + impuesto;
+
+            lblSubtot.Text = "$ " + tot.ToString("N2"); //Nada más se muestran dos decimales
+            lblIva.Text = "$ " + impuesto.ToString("N2");
+            lblTot.Text = "$ " + totFinal.ToString("N2");
+            if (totFinal == 0)
+            {
+                btnComprar.Enabled = false;
+            }
         }
     }
 }

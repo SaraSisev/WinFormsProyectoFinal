@@ -53,7 +53,7 @@ namespace WinFormsProyectoFinal
                     }
                 }
 
-                string[] colorCodes = new string[] { "#3369cc", "#95bce3", "#f4a861", "#fd8d00" };
+                string[] colorCodes = new string[] { "#FC712B", "#FD9319", "#FECD5A", "#07B1BC", "#2B8180", "#015989", "#009DC8", "#76CEE7", "#7B90A1", "#82683D" };
                 ScottPlot.Palettes.Custom palette = new(colorCodes);
 
                 //convertir listas a un arreglos para usarlas en las gráficas
@@ -83,7 +83,7 @@ namespace WinFormsProyectoFinal
                     bar.LineWidth = 2;
                     bar.LineColor = bar.FillColor.Darken(0.5);
                     bar.FillHatchColor = bar.FillColor.Lighten(0.1);
-                   
+
                 }
 
                 //configurar ticks personalizados
@@ -119,6 +119,11 @@ namespace WinFormsProyectoFinal
         }
 
         private void formsPlot1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormGrafica_Load(object sender, EventArgs e)
         {
 
         }

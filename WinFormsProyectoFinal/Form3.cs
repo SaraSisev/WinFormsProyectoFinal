@@ -23,7 +23,7 @@ namespace WinFormsProyectoFinal
         public Form3()
         {
             InitializeComponent();
-            
+
 
         }
 
@@ -109,7 +109,7 @@ namespace WinFormsProyectoFinal
 
                 while (reader.Read() && index < pictureBoxes.Count)
                 {
-                    int existenciasActuales = listaExistencias[index]; 
+                    int existenciasActuales = listaExistencias[index];
 
                     if (existenciasActuales > 0)
                     {
@@ -253,7 +253,7 @@ namespace WinFormsProyectoFinal
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            mandar(4,label4.Text, pictureBox5.Image);
+            mandar(4, label4.Text, pictureBox5.Image);
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
@@ -305,7 +305,7 @@ namespace WinFormsProyectoFinal
                 productos.Add(new Productos(indice, idProd, nombreProd, cantidad, precioProd));
 
                 //Mnesaje de que se realizó la adicion
-                MessageBox.Show($"Producto agregado: {nombreProd}, Cantidad: {cantidad}", "Nuevo Producto");
+                MessageBox.Show($"Producto agregado: {nombreProd} - Cantidad: {cantidad}", "Nuevo Producto");
             }
             else
             {
@@ -314,10 +314,10 @@ namespace WinFormsProyectoFinal
                 {
                     if (productos[i].Id == idProd)
                     {
-                        productos[i].Cantidad += 1; 
+                        productos[i].Cantidad += 1;
                         listaExistencias[indice] -= 1; //y se reducen las existencias
 
-                        MessageBox.Show($"Cantidad actualizada: {productos[i].Nombre}");
+                        MessageBox.Show($"Cantidad actualizada: {productos[i].Nombre} - Cantidad: {productos[i].Cantidad}", "Producto Agregado");
                         break;
                     }
                 }
@@ -326,8 +326,8 @@ namespace WinFormsProyectoFinal
             //Pero si las existencias llegaron a 0 se muestra un mensaje y se vuelve a cargar los productos para mostrar el cambio
             if (listaExistencias[indice] <= 0)
             {
-                listaExistencias[indice] = 0; 
-                MessageBox.Show($"{nombreProd} se agotó y será removido.", "Producto agotado");
+                listaExistencias[indice] = 0;
+                MessageBox.Show($"El producto {nombreProd} se ha agotado", "Producto agotado", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             CargarProductos();
@@ -399,6 +399,26 @@ namespace WinFormsProyectoFinal
         private void agregar3_Click_2(object sender, EventArgs e)
         {
             agregar(2, (int)pictureBox2.Tag, label2.Text, label12.Text);
+        }
+
+        private void btnMusica_Click(object sender, EventArgs e)
+        {
+            //Se puede controlar la musica usando los metodos del form1
+            if (btnMusica.Text == "Pausar Música")
+            {
+                Form1.stop();
+                btnMusica.Text = "Reanudar Música";
+            }
+            else
+            {
+                Form1.play();
+                btnMusica.Text = "Pausar Música";
+            }
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

@@ -43,7 +43,7 @@ namespace WinFormsProyectoFinal
 
                 object resultado = cmd.ExecuteScalar();
                 //condicional para comprobar si el resultado no es nulo(ninguna venta)
-                if(resultado != DBNull.Value)
+                if (resultado != DBNull.Value)
                 {
                     decimal totalVentas = Convert.ToDecimal(resultado);
                     labelVentasTotales.Text = $"Ventas Totales: ${totalVentas:N2}";//N indica los decimales a tomar en cuenta
@@ -57,7 +57,7 @@ namespace WinFormsProyectoFinal
             {
                 MessageBox.Show(ex.ToString());
             }
-            
+
         }
         private void productosMasVendidos()
         {
@@ -71,9 +71,9 @@ namespace WinFormsProyectoFinal
                 DataTable tabla = new DataTable();
                 adapter.Fill(tabla);
                 dataGridViewProductosOrdenados.DataSource = tabla;
-                
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
@@ -95,6 +95,14 @@ namespace WinFormsProyectoFinal
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            //Regresar al boton de inicio
+            Form4 inicio = new Form4();
+            inicio.Show();
+            this.Close();
         }
     }
 }

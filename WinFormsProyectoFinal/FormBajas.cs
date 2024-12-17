@@ -30,33 +30,6 @@ namespace WinFormsProyectoFinal
 
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                MySqlCommand cmd = new MySqlCommand("select * from productos where id = @id", conn.conexionBD());
-                cmd.Parameters.AddWithValue("@id", boxId.SelectedValue);
-                MySqlDataReader lectura = cmd.ExecuteReader();//ejecutar una variable que leera la base de datos para encontrar el id buscado
-                //si la variable esta leyendo
-                if (lectura.Read())
-                {
-                    labelIDBus.Text = lectura["id"].ToString();
-                    byte[] img = (byte[])lectura["imagen"];
-                    labelNombre.Text = lectura["nombre"].ToString();
-                    labelDesBus.Text = lectura["descripcion"].ToString();
-                    labelPrecioBus.Text = lectura["precio"].ToString();
-                    labelExiBus.Text = lectura["existencias"].ToString();
-                    labelVenBus.Text = lectura["ventas"].ToString();
-
-                    MemoryStream ms = new MemoryStream(img);
-                    pictureBox1.Image = Image.FromStream(ms);
-
-
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
 
         }
 
@@ -85,6 +58,11 @@ namespace WinFormsProyectoFinal
                     {
                         MessageBox.Show("\"El id igresado no existe dentro de la BD");
                     }
+
+                    //Regresar al boton de inicio
+                    Form4 inicio = new Form4();
+                    inicio.Show();
+                    this.Close();
                 }
                 else
                 {
@@ -129,9 +107,34 @@ namespace WinFormsProyectoFinal
 
         private void boxId_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int val;
-            Int32.TryParse(boxId.SelectedValue.ToString(), out val);
+            
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand("select * from productos where id = @id", conn.conexionBD());
+                cmd.Parameters.AddWithValue("@id", boxId.SelectedValue);
+                MySqlDataReader lectura = cmd.ExecuteReader();//ejecutar una variable que leera la base de datos para encontrar el id buscado
+                //si la variable esta leyendo
+                if (lectura.Read())
+                {
+                    labelIDBus.Text = "ID: " + lectura["id"].ToString();
+                    byte[] img = (byte[])lectura["imagen"];
+                    labelNombre.Text = "Nombre: " + lectura["nombre"].ToString();
+                    labelDesBus.Text = "Descripción: " + lectura["descripcion"].ToString();
+                    labelPrecioBus.Text = "Precio: " + lectura["precio"].ToString();
+                    labelExiBus.Text = "Existencias: " + lectura["existencias"].ToString();
+                    labelVenBus.Text = "Ventas: " + lectura["ventas"].ToString();
 
+                    MemoryStream ms = new MemoryStream(img);
+                    pictureBox1.Image = Image.FromStream(ms);
+
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void labelDesBus_Click(object sender, EventArgs e)

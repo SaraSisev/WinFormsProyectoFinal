@@ -51,5 +51,32 @@ namespace WinFormsProyectoFinal
             formGrafica.Show();
             this.Hide();
         }
+
+        private void btnMusica_Click(object sender, EventArgs e)
+        {
+            //Se puede controlar la musica usando los metodos del form1
+            if (btnMusica.Text == "Pausar Música")
+            {
+                Form1.stop();
+                btnMusica.Text = "Reanudar Música";
+            }
+            else
+            {
+                Form1.play();
+                btnMusica.Text = "Pausar Música";
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form2a = new Form2();
+            form2a.Show();
+            this.Hide();
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

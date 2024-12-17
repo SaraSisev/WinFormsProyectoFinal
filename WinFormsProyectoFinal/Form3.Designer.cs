@@ -76,6 +76,7 @@
             label17 = new Label();
             label18 = new Label();
             label19 = new Label();
+            btnMusica = new Button();
             ((System.ComponentModel.ISupportInitialize)imgProd1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -101,24 +102,32 @@
             // 
             // buttonlogout
             // 
-            buttonlogout.Location = new Point(854, 388);
+            buttonlogout.BackColor = Color.Transparent;
+            buttonlogout.BackgroundImageLayout = ImageLayout.None;
+            buttonlogout.FlatAppearance.BorderSize = 0;
+            buttonlogout.FlatStyle = FlatStyle.Flat;
+            buttonlogout.ForeColor = Color.Transparent;
+            buttonlogout.Image = (Image)resources.GetObject("buttonlogout.Image");
+            buttonlogout.Location = new Point(896, 431);
             buttonlogout.Margin = new Padding(2);
             buttonlogout.Name = "buttonlogout";
-            buttonlogout.Size = new Size(78, 20);
+            buttonlogout.Size = new Size(36, 44);
             buttonlogout.TabIndex = 0;
-            buttonlogout.Text = "Logout";
-            buttonlogout.UseVisualStyleBackColor = true;
+            buttonlogout.UseVisualStyleBackColor = false;
             buttonlogout.Click += buttonlogout_Click;
             // 
             // labelNombreUsuario
             // 
-            labelNombreUsuario.AutoSize = true;
-            labelNombreUsuario.Location = new Point(200, 9);
+            labelNombreUsuario.BackColor = Color.Transparent;
+            labelNombreUsuario.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            labelNombreUsuario.ForeColor = Color.FromArgb(44, 44, 44);
+            labelNombreUsuario.Location = new Point(219, 9);
             labelNombreUsuario.Margin = new Padding(2, 0, 2, 0);
             labelNombreUsuario.Name = "labelNombreUsuario";
-            labelNombreUsuario.Size = new Size(51, 15);
+            labelNombreUsuario.Size = new Size(492, 23);
             labelNombreUsuario.TabIndex = 1;
             labelNombreUsuario.Text = "Nombre";
+            labelNombreUsuario.TextAlign = ContentAlignment.TopCenter;
             // 
             // timer1
             // 
@@ -128,25 +137,32 @@
             // lblFecha
             // 
             lblFecha.AutoSize = true;
-            lblFecha.Location = new Point(12, 9);
+            lblFecha.BackColor = Color.Transparent;
+            lblFecha.Font = new Font("Verdana", 9F, FontStyle.Italic, GraphicsUnit.Point);
+            lblFecha.ForeColor = Color.FromArgb(35, 35, 35);
+            lblFecha.Location = new Point(13, 9);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(38, 15);
+            lblFecha.Size = new Size(42, 14);
             lblFecha.TabIndex = 6;
             lblFecha.Text = "Fecha";
             // 
             // lblHora
             // 
             lblHora.AutoSize = true;
-            lblHora.Location = new Point(84, 9);
+            lblHora.BackColor = Color.Transparent;
+            lblHora.Font = new Font("Verdana", 9F, FontStyle.Italic, GraphicsUnit.Point);
+            lblHora.ForeColor = Color.FromArgb(35, 35, 35);
+            lblHora.Location = new Point(94, 9);
             lblHora.Name = "lblHora";
-            lblHora.Size = new Size(33, 15);
+            lblHora.Size = new Size(35, 14);
             lblHora.TabIndex = 7;
             lblHora.Text = "Hora";
             // 
             // lblNombre1
             // 
             lblNombre1.Anchor = AnchorStyles.Top;
-            lblNombre1.Location = new Point(62, 184);
+            lblNombre1.BackColor = Color.Transparent;
+            lblNombre1.Location = new Point(49, 221);
             lblNombre1.Name = "lblNombre1";
             lblNombre1.Size = new Size(103, 15);
             lblNombre1.TabIndex = 9;
@@ -155,9 +171,10 @@
             // 
             // imgProd1
             // 
-            imgProd1.Location = new Point(35, 87);
+            imgProd1.BorderStyle = BorderStyle.Fixed3D;
+            imgProd1.Location = new Point(45, 98);
             imgProd1.Name = "imgProd1";
-            imgProd1.Size = new Size(153, 94);
+            imgProd1.Size = new Size(120, 120);
             imgProd1.SizeMode = PictureBoxSizeMode.StretchImage;
             imgProd1.TabIndex = 9;
             imgProd1.TabStop = false;
@@ -165,7 +182,8 @@
             // 
             // label1
             // 
-            label1.Location = new Point(247, 184);
+            label1.BackColor = Color.Transparent;
+            label1.Location = new Point(228, 221);
             label1.Name = "label1";
             label1.Size = new Size(103, 15);
             label1.TabIndex = 9;
@@ -174,9 +192,10 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(214, 87);
+            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox1.Location = new Point(219, 98);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(153, 94);
+            pictureBox1.Size = new Size(120, 120);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
@@ -184,7 +203,8 @@
             // 
             // label2
             // 
-            label2.Location = new Point(427, 184);
+            label2.BackColor = Color.Transparent;
+            label2.Location = new Point(414, 221);
             label2.Name = "label2";
             label2.Size = new Size(103, 15);
             label2.TabIndex = 9;
@@ -193,9 +213,10 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(400, 87);
+            pictureBox2.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox2.Location = new Point(405, 98);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(153, 94);
+            pictureBox2.Size = new Size(120, 120);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 9;
             pictureBox2.TabStop = false;
@@ -203,7 +224,8 @@
             // 
             // label3
             // 
-            label3.Location = new Point(612, 184);
+            label3.BackColor = Color.Transparent;
+            label3.Location = new Point(596, 221);
             label3.Name = "label3";
             label3.Size = new Size(103, 15);
             label3.TabIndex = 9;
@@ -212,9 +234,10 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Location = new Point(579, 87);
+            pictureBox3.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox3.Location = new Point(584, 98);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(153, 94);
+            pictureBox3.Size = new Size(120, 120);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 9;
             pictureBox3.TabStop = false;
@@ -222,10 +245,11 @@
             // 
             // pictureBox4
             // 
+            pictureBox4.BackColor = Color.Transparent;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(889, 12);
+            pictureBox4.Location = new Point(891, 9);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(32, 31);
+            pictureBox4.Size = new Size(41, 43);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 13;
             pictureBox4.TabStop = false;
@@ -233,7 +257,8 @@
             // 
             // label4
             // 
-            label4.Location = new Point(795, 184);
+            label4.BackColor = Color.Transparent;
+            label4.Location = new Point(782, 221);
             label4.Name = "label4";
             label4.Size = new Size(103, 15);
             label4.TabIndex = 9;
@@ -242,9 +267,10 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.Location = new Point(768, 87);
+            pictureBox5.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox5.Location = new Point(773, 98);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(153, 94);
+            pictureBox5.Size = new Size(120, 120);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 9;
             pictureBox5.TabStop = false;
@@ -252,7 +278,8 @@
             // 
             // label5
             // 
-            label5.Location = new Point(247, 331);
+            label5.BackColor = Color.Transparent;
+            label5.Location = new Point(49, 401);
             label5.Name = "label5";
             label5.Size = new Size(103, 15);
             label5.TabIndex = 9;
@@ -261,9 +288,10 @@
             // 
             // pictureBox6
             // 
-            pictureBox6.Location = new Point(35, 234);
+            pictureBox6.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox6.Location = new Point(40, 278);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(153, 94);
+            pictureBox6.Size = new Size(120, 120);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 9;
             pictureBox6.TabStop = false;
@@ -271,7 +299,8 @@
             // 
             // label6
             // 
-            label6.Location = new Point(62, 331);
+            label6.BackColor = Color.Transparent;
+            label6.Location = new Point(228, 401);
             label6.Name = "label6";
             label6.Size = new Size(103, 15);
             label6.TabIndex = 9;
@@ -280,9 +309,10 @@
             // 
             // pictureBox7
             // 
-            pictureBox7.Location = new Point(214, 234);
+            pictureBox7.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox7.Location = new Point(219, 278);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(153, 94);
+            pictureBox7.Size = new Size(120, 120);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 9;
             pictureBox7.TabStop = false;
@@ -290,7 +320,8 @@
             // 
             // label7
             // 
-            label7.Location = new Point(612, 331);
+            label7.BackColor = Color.Transparent;
+            label7.Location = new Point(414, 401);
             label7.Name = "label7";
             label7.Size = new Size(103, 15);
             label7.TabIndex = 9;
@@ -299,9 +330,10 @@
             // 
             // pictureBox8
             // 
-            pictureBox8.Location = new Point(400, 234);
+            pictureBox8.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox8.Location = new Point(405, 278);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(153, 94);
+            pictureBox8.Size = new Size(120, 120);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 9;
             pictureBox8.TabStop = false;
@@ -309,7 +341,8 @@
             // 
             // label8
             // 
-            label8.Location = new Point(427, 331);
+            label8.BackColor = Color.Transparent;
+            label8.Location = new Point(596, 401);
             label8.Name = "label8";
             label8.Size = new Size(103, 15);
             label8.TabIndex = 9;
@@ -318,9 +351,10 @@
             // 
             // pictureBox9
             // 
-            pictureBox9.Location = new Point(579, 234);
+            pictureBox9.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox9.Location = new Point(584, 278);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(153, 94);
+            pictureBox9.Size = new Size(120, 120);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 9;
             pictureBox9.TabStop = false;
@@ -328,7 +362,8 @@
             // 
             // label9
             // 
-            label9.Location = new Point(795, 331);
+            label9.BackColor = Color.Transparent;
+            label9.Location = new Point(781, 401);
             label9.Name = "label9";
             label9.Size = new Size(103, 15);
             label9.TabIndex = 9;
@@ -337,9 +372,10 @@
             // 
             // pictureBox10
             // 
-            pictureBox10.Location = new Point(768, 234);
+            pictureBox10.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox10.Location = new Point(773, 278);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(153, 94);
+            pictureBox10.Size = new Size(120, 120);
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox10.TabIndex = 9;
             pictureBox10.TabStop = false;
@@ -347,8 +383,9 @@
             // 
             // agregar1
             // 
+            agregar1.BackColor = Color.Transparent;
             agregar1.Image = (Image)resources.GetObject("agregar1.Image");
-            agregar1.Location = new Point(15, 72);
+            agregar1.Location = new Point(29, 84);
             agregar1.Name = "agregar1";
             agregar1.Size = new Size(35, 35);
             agregar1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -358,8 +395,9 @@
             // 
             // agregar2
             // 
+            agregar2.BackColor = Color.Transparent;
             agregar2.Image = (Image)resources.GetObject("agregar2.Image");
-            agregar2.Location = new Point(200, 72);
+            agregar2.Location = new Point(205, 84);
             agregar2.Name = "agregar2";
             agregar2.Size = new Size(35, 35);
             agregar2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -369,8 +407,9 @@
             // 
             // agregar3
             // 
+            agregar3.BackColor = Color.Transparent;
             agregar3.Image = (Image)resources.GetObject("agregar3.Image");
-            agregar3.Location = new Point(384, 72);
+            agregar3.Location = new Point(388, 84);
             agregar3.Name = "agregar3";
             agregar3.Size = new Size(35, 35);
             agregar3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -380,8 +419,9 @@
             // 
             // agregar4
             // 
+            agregar4.BackColor = Color.Transparent;
             agregar4.Image = (Image)resources.GetObject("agregar4.Image");
-            agregar4.Location = new Point(559, 72);
+            agregar4.Location = new Point(569, 84);
             agregar4.Name = "agregar4";
             agregar4.Size = new Size(35, 35);
             agregar4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -391,8 +431,9 @@
             // 
             // agregar5
             // 
+            agregar5.BackColor = Color.Transparent;
             agregar5.Image = (Image)resources.GetObject("agregar5.Image");
-            agregar5.Location = new Point(752, 72);
+            agregar5.Location = new Point(758, 84);
             agregar5.Name = "agregar5";
             agregar5.Size = new Size(35, 35);
             agregar5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -402,8 +443,9 @@
             // 
             // agregar6
             // 
+            agregar6.BackColor = Color.Transparent;
             agregar6.Image = (Image)resources.GetObject("agregar6.Image");
-            agregar6.Location = new Point(15, 219);
+            agregar6.Location = new Point(27, 261);
             agregar6.Name = "agregar6";
             agregar6.Size = new Size(35, 35);
             agregar6.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -413,8 +455,9 @@
             // 
             // agregar7
             // 
+            agregar7.BackColor = Color.Transparent;
             agregar7.Image = (Image)resources.GetObject("agregar7.Image");
-            agregar7.Location = new Point(200, 219);
+            agregar7.Location = new Point(205, 261);
             agregar7.Name = "agregar7";
             agregar7.Size = new Size(35, 35);
             agregar7.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -424,8 +467,9 @@
             // 
             // agregar8
             // 
+            agregar8.BackColor = Color.Transparent;
             agregar8.Image = (Image)resources.GetObject("agregar8.Image");
-            agregar8.Location = new Point(384, 219);
+            agregar8.Location = new Point(388, 261);
             agregar8.Name = "agregar8";
             agregar8.Size = new Size(35, 35);
             agregar8.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -435,8 +479,9 @@
             // 
             // agregar9
             // 
+            agregar9.BackColor = Color.Transparent;
             agregar9.Image = (Image)resources.GetObject("agregar9.Image");
-            agregar9.Location = new Point(559, 219);
+            agregar9.Location = new Point(569, 261);
             agregar9.Name = "agregar9";
             agregar9.Size = new Size(35, 35);
             agregar9.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -446,8 +491,9 @@
             // 
             // agregar10
             // 
+            agregar10.BackColor = Color.Transparent;
             agregar10.Image = (Image)resources.GetObject("agregar10.Image");
-            agregar10.Location = new Point(752, 219);
+            agregar10.Location = new Point(758, 261);
             agregar10.Name = "agregar10";
             agregar10.Size = new Size(35, 35);
             agregar10.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -457,99 +503,137 @@
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(84, 199);
+            label10.BackColor = Color.Transparent;
+            label10.Font = new Font("Franklin Gothic Book", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Location = new Point(55, 236);
             label10.Name = "label10";
-            label10.Size = new Size(40, 15);
+            label10.Size = new Size(78, 16);
             label10.TabIndex = 25;
             label10.Text = "Precio";
+            label10.TextAlign = ContentAlignment.TopCenter;
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(267, 199);
+            label11.BackColor = Color.Transparent;
+            label11.Font = new Font("Franklin Gothic Book", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Location = new Point(237, 236);
             label11.Name = "label11";
-            label11.Size = new Size(40, 15);
+            label11.Size = new Size(78, 16);
             label11.TabIndex = 26;
             label11.Text = "Precio";
+            label11.TextAlign = ContentAlignment.TopCenter;
+            label11.Click += label11_Click;
             // 
             // label12
             // 
-            label12.AutoSize = true;
-            label12.Location = new Point(457, 199);
+            label12.BackColor = Color.Transparent;
+            label12.Font = new Font("Franklin Gothic Book", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.Location = new Point(425, 236);
             label12.Name = "label12";
-            label12.Size = new Size(40, 15);
+            label12.Size = new Size(78, 16);
             label12.TabIndex = 27;
             label12.Text = "Precio";
+            label12.TextAlign = ContentAlignment.TopCenter;
             // 
             // label13
             // 
-            label13.AutoSize = true;
-            label13.Location = new Point(634, 199);
+            label13.BackColor = Color.Transparent;
+            label13.Font = new Font("Franklin Gothic Book", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label13.Location = new Point(605, 236);
             label13.Name = "label13";
-            label13.Size = new Size(40, 15);
+            label13.Size = new Size(78, 16);
             label13.TabIndex = 28;
             label13.Text = "Precio";
+            label13.TextAlign = ContentAlignment.TopCenter;
             // 
             // label14
             // 
-            label14.AutoSize = true;
-            label14.Location = new Point(828, 199);
+            label14.BackColor = Color.Transparent;
+            label14.Font = new Font("Franklin Gothic Book", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label14.Location = new Point(796, 236);
             label14.Name = "label14";
-            label14.Size = new Size(40, 15);
+            label14.Size = new Size(78, 16);
             label14.TabIndex = 29;
             label14.Text = "Precio";
+            label14.TextAlign = ContentAlignment.TopCenter;
             // 
             // label15
             // 
-            label15.AutoSize = true;
-            label15.Location = new Point(84, 346);
+            label15.BackColor = Color.Transparent;
+            label15.Font = new Font("Franklin Gothic Book", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label15.Location = new Point(57, 416);
             label15.Name = "label15";
-            label15.Size = new Size(40, 15);
+            label15.Size = new Size(78, 16);
             label15.TabIndex = 30;
             label15.Text = "Precio";
+            label15.TextAlign = ContentAlignment.TopCenter;
             // 
             // label16
             // 
-            label16.AutoSize = true;
-            label16.Location = new Point(267, 346);
+            label16.BackColor = Color.Transparent;
+            label16.Font = new Font("Franklin Gothic Book", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label16.Location = new Point(237, 416);
             label16.Name = "label16";
-            label16.Size = new Size(40, 15);
+            label16.Size = new Size(78, 16);
             label16.TabIndex = 31;
             label16.Text = "Precio";
+            label16.TextAlign = ContentAlignment.TopCenter;
             // 
             // label17
             // 
-            label17.AutoSize = true;
-            label17.Location = new Point(457, 346);
+            label17.BackColor = Color.Transparent;
+            label17.Font = new Font("Franklin Gothic Book", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label17.Location = new Point(424, 416);
             label17.Name = "label17";
-            label17.Size = new Size(40, 15);
+            label17.Size = new Size(78, 16);
             label17.TabIndex = 32;
             label17.Text = "Precio";
+            label17.TextAlign = ContentAlignment.TopCenter;
             // 
             // label18
             // 
-            label18.AutoSize = true;
-            label18.Location = new Point(634, 346);
+            label18.BackColor = Color.Transparent;
+            label18.Font = new Font("Franklin Gothic Book", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label18.Location = new Point(604, 416);
             label18.Name = "label18";
-            label18.Size = new Size(40, 15);
+            label18.Size = new Size(78, 16);
             label18.TabIndex = 33;
             label18.Text = "Precio";
+            label18.TextAlign = ContentAlignment.TopCenter;
             // 
             // label19
             // 
-            label19.AutoSize = true;
-            label19.Location = new Point(828, 346);
+            label19.BackColor = Color.Transparent;
+            label19.Font = new Font("Franklin Gothic Book", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label19.Location = new Point(792, 416);
             label19.Name = "label19";
-            label19.Size = new Size(40, 15);
+            label19.Size = new Size(78, 16);
             label19.TabIndex = 34;
             label19.Text = "Precio";
+            label19.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // btnMusica
+            // 
+            btnMusica.BackColor = Color.FromArgb(255, 224, 192);
+            btnMusica.FlatStyle = FlatStyle.Flat;
+            btnMusica.ForeColor = Color.FromArgb(206, 72, 0);
+            btnMusica.Location = new Point(13, 452);
+            btnMusica.Name = "btnMusica";
+            btnMusica.Size = new Size(120, 23);
+            btnMusica.TabIndex = 35;
+            btnMusica.Text = "Pausar Música";
+            btnMusica.UseVisualStyleBackColor = false;
+            btnMusica.Click += btnMusica_Click;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(943, 419);
+            BackColor = Color.FromArgb(239, 231, 229);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Center;
+            ClientSize = new Size(943, 486);
+            Controls.Add(btnMusica);
             Controls.Add(label19);
             Controls.Add(label18);
             Controls.Add(label17);
@@ -595,8 +679,11 @@
             Controls.Add(lblFecha);
             Controls.Add(labelNombreUsuario);
             Controls.Add(buttonlogout);
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2);
             Name = "Form3";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form3";
             Load += Form3_Load;
             ((System.ComponentModel.ISupportInitialize)imgProd1).EndInit();
@@ -672,5 +759,6 @@
         private Label label17;
         private Label label18;
         private Label label19;
+        private Button btnMusica;
     }
 }
