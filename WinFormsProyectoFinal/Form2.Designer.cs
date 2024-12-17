@@ -53,7 +53,7 @@
             textBoxCuenta.Location = new Point(294, 223);
             textBoxCuenta.Name = "textBoxCuenta";
             textBoxCuenta.PlaceholderText = "Cuenta";
-            textBoxCuenta.Size = new Size(150, 31);
+            textBoxCuenta.Size = new Size(106, 23);
             textBoxCuenta.TabIndex = 1;
             // 
             // textBoxConstrasena
@@ -61,7 +61,7 @@
             textBoxConstrasena.Location = new Point(294, 292);
             textBoxConstrasena.Name = "textBoxConstrasena";
             textBoxConstrasena.PlaceholderText = "Contrasena";
-            textBoxConstrasena.Size = new Size(150, 31);
+            textBoxConstrasena.Size = new Size(106, 23);
             textBoxConstrasena.TabIndex = 2;
             // 
             // buttonIngresar
@@ -107,7 +107,7 @@
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(buttonSalir);
@@ -117,6 +117,7 @@
             Controls.Add(textBoxConstrasena);
             Controls.Add(textBoxCuenta);
             Controls.Add(labelNomSistema);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form2";
             Text = "Form2";
             Load += Form2_Load;

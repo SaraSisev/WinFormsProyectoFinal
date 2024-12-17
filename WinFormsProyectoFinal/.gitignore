@@ -1,0 +1,14 @@
+﻿# Archivos de caché de Visual Studio
+.vs/
+*.suo
+*.cache
+*.v2
+
+# Directorios de compilación
+bin/
+obj/
+
+# Archivos de salida
+*.exe
+*.dll
+*.pdb
