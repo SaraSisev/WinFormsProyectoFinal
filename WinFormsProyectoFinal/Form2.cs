@@ -5,6 +5,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,10 +17,16 @@ namespace WinFormsProyectoFinal
     {
         string cuentasRegistradas;//variable que almacena las cuentas registradas en la base de datos
         string contrasRegistradas;//variable que almacena las contrasenas registradas en la base de datos
+
+        
         public Form2()
         {
             InitializeComponent();
         }
+
+
+
+        public static string Nombre { get; set; } = "";//propiedad para almacacenar el nombre del usuario y asi mostrarlo en los forms
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -44,28 +52,32 @@ namespace WinFormsProyectoFinal
                     if (textBoxCuenta.Text == cuentasRegistradas && textBoxConstrasena.Text == contrasRegistradas)
                     {
                         cuentaValida = true;//indica que la cuenta si existe ya que se encontro
+                        DatosUsuario.Nombre = reader["nombre"].ToString();//almacenar el nombre del usuario que accedio para asi mostrarlo en otros forms
+                        MessageBox.Show(" Bienvenid@ " + DatosUsuario.Nombre, "Usuario/a Encontrado");
                         break;//salir de bucle cuando se encuentra la cuenta deseada
                     }
                 }
                 if (cuentaValida)
                 {
                     //si la cuenta encontrada es del admin se abre el form4
-                   if (cuentasRegistradas == rol)
-                   {
+                    if (cuentasRegistradas == rol)
+                    {
                         Form4 form4 = new Form4();
                         form4.Show();
                         this.Hide();
-                   }
-                   else//si la cuenta encontrada es de algun usuario se abre el form 3
-                   {
-                        Form3 form3 = new Form3();
+
+                    }
+                    else//si la cuenta encontrada es de algun usuario se abre el form 3
+                    {
+                        Nombre = DatosUsuario.Nombre;
+                        Form3 form3 = new Form3(Nombre);
                         form3.Show();
                         this.Hide();
-                   }
+                    }
                 }
                 else
                 {
-                    MessageBox.Show(" ERROR Cuenta no encontrada");
+                    MessageBox.Show("Cuenta no encontrada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
@@ -73,7 +85,26 @@ namespace WinFormsProyectoFinal
             {
                 MessageBox.Show(ex.ToString());//mostrar si hay algun error 
             }
-         }
-         
+        }
+
+        private void buttonSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMusica_Click(object sender, EventArgs e)
+        {
+            //Se puede controlar la musica usando los metodos del form1
+            if (btnMusica.Text == "Pausar Música")
+            {
+                Form1.stop();
+                btnMusica.Text = "Reanudar Música";
+            }
+            else
+            {
+                Form1.play();
+                btnMusica.Text = "Pausar Música";
+            }
+        }
     }
 }

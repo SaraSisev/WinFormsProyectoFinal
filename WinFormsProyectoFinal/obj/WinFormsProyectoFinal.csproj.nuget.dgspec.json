@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\saraa\\Downloads\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj": {}
+    "C:\\Users\\lenovo\\Source\\Repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj": {}
   },
   "projects": {
-    "D:\\Users\\saraa\\Downloads\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj": {
+    "C:\\Users\\lenovo\\Source\\Repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\saraa\\Downloads\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\Source\\Repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj",
         "projectName": "WinFormsProyectoFinal",
-        "projectPath": "D:\\Users\\saraa\\Downloads\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj",
+        "projectPath": "C:\\Users\\lenovo\\Source\\Repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\WinFormsProyectoFinal.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\saraa\\Downloads\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\obj\\",
+        "outputPath": "C:\\Users\\lenovo\\Source\\Repos\\WinFormsProyectoFinal\\WinFormsProyectoFinal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,6 +53,10 @@
             "MySql.Data": {
               "target": "Package",
               "version": "[9.1.0, )"
+            },
+            "ScottPlot.WinForms": {
+              "target": "Package",
+              "version": "[5.0.47, )"
             }
           },
           "imports": [

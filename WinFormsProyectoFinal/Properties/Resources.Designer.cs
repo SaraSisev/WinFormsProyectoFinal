@@ -63,6 +63,16 @@ namespace WinFormsProyectoFinal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap f2_7 {
+            get {
+                object obj = ResourceManager.GetObject("f2.7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap uaa {
             get {
                 object obj = ResourceManager.GetObject("uaa", resourceCulture);
